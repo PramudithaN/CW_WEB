@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <meta charset="UTF-8"> -->
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="banner">
+
+    </div>
+    <header>
+      <a href="#" class="logo">Logo</a>
+      <ul>
+        <li><a href="#"class="active">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Quiz</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Comments</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="bottom.png" id="bottom">
+      <!-- <img src="moon.png" id="moon"> -->
+      <img src="leftimg.png" id="leftimg">
+      <h2 id="text">Pixel Art</h2>
+      <a href="#" id="btn"><span></span>Purchase</a>
+      <img src="rightimg.png" id="rightimg">
+    </section>
+    <div class="sec"id="sec">
+      <h2>Digital Art Gallery</h2>
+      <p>Digital art refers to any artistic work or practice that uses digital technology as part of the creative or presentation process. It can also refer to computational art that uses and engages with digital media.</p>
+    </div>
+
+    <script>
+      let bg = document.getElementById('bottom');
+      // let moon = document.getElementById('moon');
+      let leftimg = document.getElementById('leftimg');
+      let text = document.getElementById('text');
+      let btn = document.getElementById('btn');
+      let rightimg = document.getElementById('rightimg');
+      let header = document.querySelector('header');
+    
+      window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+        bottom.style.left = value * 0 + 'px';
+        // moon.style.top = value * 2.05  + 'px';
+        leftimg.style.right = value * 2.5 + 'px';
+        rightimg.style.left = value * 2.5 + 'px';
+        text.style.marginTop = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginTop = value * 2.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+        
+        
+      })
+    </script>
+  </body>
+</html>
