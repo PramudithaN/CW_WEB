@@ -21,12 +21,12 @@
       </ul>
     </header>
     <section>
-      <img src="bottom.png" id="bottom">
+      <img src="neon.jpg" id="neon">
       <!-- <img src="moon.png" id="moon"> -->
-      <img src="leftimg.png" id="leftimg">
+      <img src="Bg.png" id="Bg">
       <h2 id="text">Pixel Art</h2>
       <a href="#" id="btn"><span></span>Purchase</a>
-      <img src="rightimg.png" id="rightimg">
+      <img src="girl.png" id="girl">
     </section>
     <div class="sec"id="sec">
       <h2>Digital Art Gallery</h2>
@@ -34,20 +34,20 @@
     </div>
 
     <script>
-      let bg = document.getElementById('bottom');
+      let neon = document.getElementById('neon');
       // let moon = document.getElementById('moon');
-      let leftimg = document.getElementById('leftimg');
+      let Bg = document.getElementById('Bg');
       let text = document.getElementById('text');
       let btn = document.getElementById('btn');
-      let rightimg = document.getElementById('rightimg');
+      let girl = document.getElementById('girl');
       let header = document.querySelector('header');
     
       window.addEventListener('scroll',function(){
         let value = window.scrollY;
-        bottom.style.left = value * 0 + 'px';
+        neon.style.left = value * 0 + 'px';
         // moon.style.top = value * 2.05  + 'px';
-        leftimg.style.right = value * 2.5 + 'px';
-        rightimg.style.left = value * 2.5 + 'px';
+        Bg.style.left = value * 4.5 + 'px';
+        girl.style.right = value * 2.5 + 'px';
         text.style.marginTop = value * 4 + 'px';
         text.style.marginTop = value * 1.5 + 'px';
         btn.style.marginTop = value * 2.5 + 'px';
