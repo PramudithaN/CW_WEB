@@ -76,15 +76,13 @@ button:focus{
 header {
     position: absolute;
     top: 0;
-    /* left: 0;
-    right: 10; */
     width: 100%;
     padding: 20px 115px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
-    font-size: 2em;
+    font-size: 1.2em;
   }
   
   header .Logo {
