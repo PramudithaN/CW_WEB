@@ -28,14 +28,14 @@ header {
   font-size: 1.2rem;
 }
 
-  header .Logo {
-    color: azure;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
+/* header .Logo {
+  color: azure;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+} */
 
 header ul {
   display: flex;
@@ -181,7 +181,7 @@ section img {
 }
 
 span {
-  background: #720616;
+  background: #05208b;
   height: 100%;
   width: 0;
   position: absolute;
