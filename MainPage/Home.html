@@ -1,60 +1,85 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Home Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  <body>
-    <div class="banner">
 
-    </div>
+  <body>
+    <div class="banner"></div>
+
     <header>
-      <a href="#" class="logo">Pixel Art</a>
+      <a href="#" class="logo"></a>
       <ul>
-        <li><a href="#"class="active">Home</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
         <li><a href="#">Quiz</a></li>
         <li><a href="#">Sitemap</a></li>
         <li><a href="#">Comments</a></li>
         <li><a href="#">About Us</a></li>
       </ul>
     </header>
+
     <section>
-      <img src="neon.jpg" id="neon">
-      <!-- <img src="moon.png" id="moon"> -->
-      <img src="Bg.png" id="Bg">
+      <img src="neon.jpg" id="neon" />
+      <img src="Bg.png" id="Bg" />
       <h2 id="text">Pixel Art</h2>
-      <a href="#" id="btn"><span></span>Purchase</a>
-      <img src="girl.png" id="girl">
+      <a href="#" id="btn"><span></span>Scroll Down</a>
+      <img src="girl.png" id="girl" />
     </section>
-    <div class="sec"id="sec">
+
+    <section>
+      <div class="card card1">
+        <h5>Digital Art</h5>
+        <p>hand drawn art description</p>
+      </div>
+
+      <div class="card card2">
+        <h5>Hand Drawn Art</h5>
+        <p>hand drawn art description</p>
+      </div>
+
+      <div class="card card3">
+        <h5>Ai Art</h5>
+        <p>hand drawn art description</p>
+      </div>
+
+      <div class="card card4">
+        <h5>some Art</h5>
+        <p>hand drawn art description</p>
+      </div>
+    </section>
+
+    <div class="sec" id="sec">
       <h2>Digital Art Gallery</h2>
-      <p>Digital art refers to any artistic work or practice that uses digital technology as part of the creative or presentation process. It can also refer to computational art that uses and engages with digital media.</p>
+      <p>
+        Digital art refers to any artistic work or practice that uses digital
+        technology as part of the creative or presentation process. It can also
+        refer to computational art that uses and engages with digital media.
+      </p>
     </div>
 
     <script>
-      let neon = document.getElementById('neon');
+      let neon = document.getElementById("neon");
       // let moon = document.getElementById('moon');
-      let Bg = document.getElementById('Bg');
-      let text = document.getElementById('text');
-      let btn = document.getElementById('btn');
-      let girl = document.getElementById('girl');
-      let header = document.querySelector('header');
-    
-      window.addEventListener('scroll',function(){
+      let Bg = document.getElementById("Bg");
+      let text = document.getElementById("text");
+      let btn = document.getElementById("btn");
+      let girl = document.getElementById("girl");
+      let header = document.querySelector("header");
+
+      window.addEventListener("scroll", function () {
         let value = window.scrollY;
-        neon.style.left = value * 0 + 'px';
+        neon.style.left = value * 0 + "px";
         // moon.style.top = value * 2.05  + 'px';
-        Bg.style.left = value * 4.5 + 'px';
-        girl.style.right = value * 3.5 + 'px';
-        text.style.marginTop = value * 4 + 'px';
-        text.style.marginTop = value * 1.5 + 'px';
-        btn.style.marginTop = value * 2.5 + 'px';
-        header.style.top = value * 0.5 + 'px';
-        
-        
-      })
+        Bg.style.left = value * 4.5 + "px";
+        girl.style.right = value * 3.5 + "px";
+        text.style.marginTop = value * 4 + "px";
+        text.style.marginTop = value * 1.5 + "px";
+        btn.style.marginTop = value * 2.5 + "px";
+        header.style.top = value * 0.5 + "px";
+      });
     </script>
   </body>
 </html>

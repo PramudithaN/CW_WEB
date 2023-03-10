@@ -1,203 +1,218 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
-*
-{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
-scroll-behavior: smooth;
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
-body
-{
-	min-height: 100vh;
-	overflow-x: hidden;
-	background: linear-gradient(#2b1055,#7597de);
-	}
-	
-/* .banner
-{
-	width: 100%;
-	height: 100vh;
-	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75),url(wallpaperflare.com_wallpaper.jpg));
-	background-size: cover;
-	background-position: center;
-} */
-
-header
-{
-	position: absolute;
-	top: 0; 
-	left: 0;
-	width: 100%;
-	padding: 30px 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 10000;
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: url(oo.jpg);
+  background-size: cover;
+  /* background: linear-gradient(#2b1055,#7597de); */
 }
 
-header .Logo
-{
- color: azure;
- font-weight: 700;
- text-decoration: none;
- font-size: 2em;
- text-transform: uppercase;
- letter-spacing: 2px;
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
 }
 
-header ul
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+header .Logo {
+  color: azure;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-header ul li
-{
-	list-style: none;
-	margin-left: 20px;
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header ul li a
-{
-	text-decoration: none;
-	padding: 6px 15px;
-	color: aliceblue;
-	border-radius: 20px;
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: aliceblue;
+  border-radius: 20px;
+}
+
+header ul li.active a {
+  background: #2b1055;
+  color: #fff;
 }
 
 header ul li a:hover,
-header ul li a:hover
-{
-	background: #fff;
-	color: #2b1055	;
+header ul li a:hover {
+  background: #fff;
+  color: #2b1055;
 }
 
-
-
-
-section
-{
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	padding: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-section::before
-{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 100px;
-	background: linear-gradient(to top,#1c0522,transparent);
-	z-index: 1000  ;
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 1000;
 }
 
-section img
-{
-	position: absolute;
-	top: 0;
-	/* left: 0; */
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	pointer-events: none;
+/* Display image 01 */
+section img {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
 }
 
-section img#moon
-{
-	mix-blend-mode: screen;
+.card {
+  width: 600px;
+  height: 630px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
 }
 
-section img#mountains_front
-{
-	z-index: 10;
+.card1 {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+  background-image: url(digitalart.jpg);
 }
 
-
-
-
-#text
-{
-	position: absolute;
-	right: center;
-	align-items: center;
-	color:#fff;
-	white-space: nowrap;
-	font-size: 7.5vw; 
-	/* font-size: 1.5em; */
-	 z-index: 9;  
-	 transform: translateY(-90px);
-	
+.card2 {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+  background-image: url(handdrawn.jpg);
 }
 
-#btn
-{
-	position: absolute;
-	text-decoration: none;
-	display: inline-block;
-	padding: 4px 40px;
-	border-radius: 40px;
-	background: transparent;
-	border: 2px solid #ffffff;
-	color: #ffffff;
-	font-size: 1.5em;
-	z-index: 9; 
-	transform: translateY(100px);
-	cursor: pointer;
-	position: relative;
-	overflow: hidden;
+.card3 {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+  background-image: url(aiart.jpg);
 }
 
-span
-{
-	background: #720616;
-	height: 100%;
-	width: 0; 
-	position: absolute;
-	border-radius: 40px;
-	left: 0;
-	bottom: 0;
-	z-index: -1;
-	transition: 0.5s;
+.card4 {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+  background-image: url(aethatic.jpg);
 }
 
-#btn:hover span
-{
-width: 100%;
+.card p {
+  text-shadow: 0 0 15px #000;
+  font-size: 10px;
 }
 
-#btn:hover
-{
-	border: none;
+.card:hover {
+  transform: translateY(-10px);
 }
 
-.sec
-{
-	position: relative;
-	padding: 100px;
-	background: #1c0522;
+/* Pixel Art Heading */
+#text {
+  position: absolute;
+  right: center;
+  align-items: center;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 11.5vw;
+  /* font-size: 1.5em; */
+  z-index: 9;
+  transform: translateY(-90px);
 }
 
-
-
-.sec h2
-{
-	font-size: 3.5em;
-	margin-bottom: 10px;
-	color: #fff;
+/* -------------------Buttons------------------------------ */
+#btn {
+  position: absolute;
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 40px;
+  border-radius: 40px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 1.5em;
+  z-index: 9;
+  transform: translateY(100px);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
-.sec p
-{
-	font-size: 1 em;
-	color: #fff;
-}  
+span {
+  background: #720616;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  border-radius: 40px;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+#btn:hover span {
+  width: 100%;
+}
+
+#btn:hover {
+  border: none;
+}
+/* ------------------------------------------------------ */
+
+.sec {
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+}
+
+.sec h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sec p {
+  font-size: 1 em;
+  color: #fff;
+}
