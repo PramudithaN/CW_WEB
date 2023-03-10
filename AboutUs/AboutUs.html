@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="AboutUs.css">
+</head>
+<body>
+    <div class="banner"></div>
+
+    <header>
+      <a href="#" class="logo"></a>
+      <ul>
+        <li><a href="../MainPage/Home.html">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="../Quiz/quiz.html">Quiz</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Comments</a></li>
+        <li class="active"><a href="../AboutUs/AboutUs.html">About Us</a></li>
+      </ul>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script type="text/javascript">
+        $(document).on("click", "ul li", function () {
+          $(this).addClass("active").siblings().removeClass();
+        });
+      </script>
+    </header>
+
+    <section class="hero-section">
+    <div class="card-grid">
+        <a class="card" href="#">
+        <div class="card__background" style="background-image: url(Sewwmini.jpg)"></div>
+        <div class="card__content">
+            <h3 class="card__heading">Sewmini Dissanayake</h3>
+            <p class="card__category">UOW:W1902270</p>
+            <p class="card__category">IIT:20212184</p>
+            <p class="card__category">Student 01</p>
+        </div>
+        </a>
+        <a class="card" href="#">
+        <div class="card__background" style="background-image: url(Pramuditha.png)"></div>
+        <div class="card__content">
+            <h3 class="card__heading">Pramuditha Nadun</h3>
+            <p class="card__category">UOW:W1902262</p>
+            <p class="card__category">IIT:20212171</p>
+            <p class="card__category">Student 02</p>
+        </div>
+        </a>
+        <a class="card" href="#">
+        <div class="card__background" style="background-image: url(Kavindu.jpg)"></div>
+        <div class="card__content">
+            <h3 class="card__heading">Kavindu Mendis</h3>
+            <p class="card__category">UOW:W1902232</p>
+            <p class="card__category">IIT:20212152</p>
+            <p class="card__category">Student 03</p>
+        </div>
+        </li>
+        <a class="card" href="#">
+        <div class="card__background" style="background-image: url(https://source.unsplash.com/vTveTqbaTNM)"></div>
+        <div class="card__content">
+            <h3 class="card__heading">Pasindu Madusara</h3>
+            <p class="card__category">UOW:W1902232</p>
+            <p class="card__category">IIT:20212152</p>
+            <p class="card__category">Student 04</p>
+        </div>
+        </a>
+    <div>
+    </section>
+</body>
+</html>
