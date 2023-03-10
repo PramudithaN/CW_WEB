@@ -9,7 +9,6 @@
 
 body{
     background-color: antiquewhite;
-    background-image: url(neon.jpg);
     background-size: cover;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -77,13 +76,15 @@ button:focus{
 header {
     position: absolute;
     top: 0;
-    left: 0;
+    /* left: 0;
+    right: 10; */
     width: 100%;
-    padding: 30px 100px;
+    padding: 20px 115px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    font-size: 2em;
   }
   
   header .Logo {
