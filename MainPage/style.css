@@ -15,6 +15,11 @@ body {
   /* background: linear-gradient(#2b1055,#7597de); */
 }
 
+body::-webkit-scrollbar
+{
+display: none;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -181,7 +186,7 @@ section img {
 }
 
 span {
-  background: #05208b;
+  background: #2b1055;
   height: 100%;
   width: 0;
   position: absolute;
@@ -201,29 +206,27 @@ span {
 }
 /* ------------------------------------------------------ */
 
-.scrollTop
-{
-	position: fixed;
-	bottom: 40px;
-	right: 40px;
-	width: 60px;
-	height: 60px;
-	background: url(btt.png);
-	border-radius: 50%;
-	background-size: 40px;
-	background-position: center;
-	background-repeat: no-repeat;
-	cursor: pointer;
-	z-index: 100000;
-	visibility: hidden;
-	opacity: 0;
-	transition: 0.5s;
+.scrollTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background: url(btt.png);
+  border-radius: 50%;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 100000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
 }
 
-.scrollTop.active
-{
-	visibility: visible;
-	opacity: 1;
+.scrollTop.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .sec {
