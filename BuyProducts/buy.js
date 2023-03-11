@@ -74,7 +74,7 @@ function  addProductToCart(title, price, productImg){
     var cartItems = document.getElementsByClassName('cart-content')[0];
     var cartItemName = cartItems.getElementsByClassName('cart-product-title');
     for (var i = 0; i < cartItemName.length; i++){
-        if(cartItemName[i].innerText == title){
+        if(cartItemName[i].innerHTML == title){
         alert('You have already add this item to cart');
         return;
         }
@@ -84,7 +84,7 @@ var cartBoxContent = `
                            <img src="${productImg}" alt="" class="cart-img">
                             <div class="detail-box">
                                 <div class="cart-price">${price}</div>
-                                <<div class="cart-product-title">${title}</div>
+                                <<div class="cart-product-title"></div>
                                 <input type="number" value="1" class="cart-quantity">
                             </div>
                             <i class='bx bxs-trash cart-remove' ></i>`;
