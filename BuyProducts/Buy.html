@@ -3,11 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <title>Buy Products</title> 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="buy.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
     </head>
     <body>
+        <header>
+            <a href="#" class="logo"></a>
+            <ul>
+              <li><a href="../MainPage/Home.html">Home</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li class="active"><a href="../BuyProducts/Buy.html">Shop</a></li>
+              <li><a href="../Quiz/quiz.html">Quiz</a></li>
+              <li><a href="#">Sitemap</a></li>
+              <li><a href="../Comments/Comment.html">Comments</a></li>
+              <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
+            </ul>
+      
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script type="text/javascript">
+              $(document).on("click", "ul li", function () {
+                $(this).addClass("active").siblings().removeClass();
+              });
+            </script>
+          </header>
         <header>
             <div class="nav contain">
                 <a href="#" class="logo"></a>
@@ -203,7 +222,25 @@
                 </div>
             </div>
         </section>
+        
         <script src="buy.js"></script>
-
+        <video id="bg-video" autoplay muted loop>
+            <source
+              src="sewmiebi.mp4"
+              type="video/mp4"
+            />
+            <!-- Add more source tags for other video formats -->
+          </video>
+      
+          <style>
+            #bg-video {
+              position: fixed;
+              right: 0;
+              bottom: 0;
+              min-width: 100%;
+              min-height: 100%;
+              z-index: -1;
+            }
+          </style>
     </body>
 </html>
