@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form to email</title>
     <link rel="stylesheet" href="comment.css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("r8m5QjSnzfnAcqdIk");
+   })();
+</script>
 </head>
 
 <body>
@@ -29,17 +37,17 @@
             });
         </script>
     </header>
-    <div class="container"></div>
+    <div class="container border mt-3 bg-light">
     <form onsubmit="sendEmail(); reset(); return false;">
         <h3>GET IN TOUCH</h3>
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Email Id" required />
+        <input type="text" id="name" placeholder="Enter Your Name" required />
+        <input type="email" id="email" placeholder="Enter Your Email" required />
         <input type="text" id="phone" placeholder="Phone no." required />
         <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
-        <button type="submit">Send</button>
+        <button type="submit" onclick="sendMail()">Send</button>
     </form>
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function sendEmail() {
             Email.send({
@@ -60,7 +68,8 @@
                     document.getElementById("message").value,
             }).then((message) => alert("Message Sent Succesfully"));
         }
-    </script>
+    </script> -->
+    </div>
 </body>
 
 </html>
