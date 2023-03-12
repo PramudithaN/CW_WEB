@@ -44,7 +44,8 @@ body {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  padding: var(--spacing-l);
+  padding-top: 80px;
+  /* padding: var(--spacing-l); */
 }
 
 @media (min-width: 540px) {
@@ -60,6 +61,7 @@ body {
 }
 
 .card {
+  /* padding-top: 90px; */
   list-style: none;
   position: relative;
 }
@@ -169,4 +171,11 @@ header ul li a:hover {
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+.us{
+  font-size: 35px;
+  position: fixed;
+  padding-top: 40px;
+  color: #fff;
 }

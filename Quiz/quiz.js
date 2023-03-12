@@ -1,29 +1,29 @@
 const quizData = [
   {
-    question: "What tool do you use to give more contrast to a pencil drawing?",
-    a: "Level tool.",
-    b: "Color / Contrast tool.",
-    c: "Lasso tool.",
-    d: "Curve tool.",
-    correct: "a",
-  },
-
-  {
-    question: "What is the application  used to paint the image?",
-    a: "Adobe Photoshop",
-    b: "Digital Canvas",
-    c: "Corel Painter XI",
-    d: "WIndows Paint",
+    question: "Which of the following is not a primary color?",
+    a: "Red",
+    b: "Yellow",
+    c: "Green",
+    d: "Blue",
     correct: "c",
   },
 
   {
-    question: "What is the main brush tools used to paint the image?",
-    a: "Oil pastels",
-    b: "Digital watercolors",
-    c: "Color pencils",
-    d: "Image hose",
-    correct: "b",
+    question: "Which software is commonly used for digital painting?",
+    a: "Adobe Photoshop",
+    b: "Final Cut Pro",
+    c: "Microsoft Word",
+    d: "Windows Paint",
+    correct: "a",
+  },
+
+  {
+    question: "Which art movement is often associated with the use of bright colors and geometric shapes?",
+    a: "Impressionism",
+    b: "Baroque",
+    c: "Pop Art",
+    d: "Realism",
+    correct: "c",
   },
 
   {
@@ -35,12 +35,12 @@ const quizData = [
     correct: "c",
   },
   {
-    question: "What is the reason for using the brushes in Question 4?",
-    a: "The colors do not paint over the pencil drawing.",
-    b: "The colors blend better than other brushes.",
-    c: "The brushes are easier to use than others.",
-    d: "None of the above",
-    correct: "a",
+    question: "Who painted the Mona Lisa?",
+    a: "Michelangelo",
+    b: "Leonardo da Vinci",
+    c: "Pablo Picasso",
+    d: "Vincent van Gogh",
+    correct: "b",
   },
 ];
 

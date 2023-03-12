@@ -16,14 +16,17 @@
 }
 
 .row {
-  padding: 100px;
+  /* padding: 100px;
+  padding-left: 100px;
+  padding-right: 90px; */
   display: flex;
   height: 88%;
   align-items: center;
 }
 
 .col {
-  padding-top: 30%;
+  padding-top: 150px;
+  padding-left: 150px;
   flex-basis: 50%;
 }
 
@@ -54,24 +57,21 @@ p {
 }
 
 .card1 {
-  background-image: url(digital.jpg);
+  background-image: url(d1.jfif);
 }
 
 .card2 {
-  background-image: url(d3.jfif);
+  background-image: url(digital.jpg);
 }
 
 .card3 {
-  background-image: url(d1.jfif);
+  background-image: url(d3.jfif);
 }
 
 .card4 {
   background-image: url(d4.jfif);
 }
 
-.card5 {
-  background-image: url(d4.jfif);
-}
 .card {
   transform: translateY(-10px);
 }

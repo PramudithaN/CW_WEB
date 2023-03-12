@@ -23,9 +23,9 @@ body {
 .quiz-container {
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
-  border-radius: 10px;
-  box-shadow: 0 0 10px 2px rgb(24, 170, 181);
-  width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px rgb(24, 170, 181);
+  width: 900px;
   overflow: hidden;
 }
 
@@ -66,7 +66,7 @@ button {
 }
 
 button:hover {
-  background-color: #04adc4;
+  background-color: #0f4aa2;
 }
 
 button:focus {

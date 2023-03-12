@@ -16,7 +16,9 @@
 }
 
 .row {
-  padding: 100px;
+  /* padding: 100px;
+  padding-left: 100px;
+  padding-right: 90px; */
   display: flex;
   height: 88%;
   align-items: center;
@@ -24,6 +26,7 @@
 
 .col {
   padding-top: 150px;
+  padding-left: 150px;
   flex-basis: 50%;
 }
 
