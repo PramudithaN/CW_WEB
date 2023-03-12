@@ -23,6 +23,7 @@
 }
 
 .col {
+  padding-top: 150px;
   flex-basis: 50%;
 }
 
@@ -53,19 +54,19 @@ p {
 }
 
 .card1 {
-  background-image: url();
+  background-image: url(h4.jfif);
 }
 
 .card2 {
-  background-image: url(handdrawnart.jpg);
+  background-image: url(h1.jfif);
 }
 
 .card3 {
-  background-image: url();
+  background-image: url(h2.jfif);
 }
 
 .card4 {
-  background-image: url();
+  background-image: url(h3.jfif);
 }
 
 .card {

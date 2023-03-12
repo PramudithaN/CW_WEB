@@ -23,6 +23,7 @@
 }
 
 .col {
+  padding-top: 150px;
   flex-basis: 50%;
 }
 
@@ -53,15 +54,15 @@ p {
 }
 
 .card1 {
-  background-image: url();
+  background-image: url(a1.jfif);
 }
 
 .card2 {
-  background-image: url();
+  background-image: url(a2.jfif);
 }
 
 .card3 {
-  background-image: url();
+  background-image: url(a3.jfif);
 }
 
 .card4 {
