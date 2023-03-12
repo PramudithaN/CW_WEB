@@ -23,7 +23,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   border-radius: 10px;
-  box-shadow: 0 0 10px 2px rgb(127, 129, 90);
+  box-shadow: 0 0 10px 2px rgb(24, 170, 181);
   width: 600px;
   overflow: hidden;
 }
@@ -53,7 +53,7 @@ ul li label {
 }
 
 button {
-  background-color: #03cae4;
+  background-color: #70a3f1;
   color: #fff;
   border: none;
   display: block;
