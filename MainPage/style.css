@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -15,9 +16,8 @@ body {
   /* background: linear-gradient(#2b1055,#7597de); */
 }
 
-body::-webkit-scrollbar
-{
-display: none;
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
@@ -103,15 +103,19 @@ section img {
   pointer-events: none;
 }
 
+.click {
+  padding: 5px 5px;
+}
+
 .card {
-  width: 600px;
+  width: 300px;
   height: 630px;
   display: inline-block;
   border-radius: 10px;
   padding: 15px 25px;
   box-sizing: border-box;
   cursor: pointer;
-  margin: 10px 15px;
+  margin: 10px 2px;
   background-position: center;
   background-size: cover;
   transition: transform 0.5s;
@@ -204,6 +208,7 @@ span {
 #btn:hover {
   border: none;
 }
+
 /* ------------------------------------------------------ */
 
 .scrollTop {

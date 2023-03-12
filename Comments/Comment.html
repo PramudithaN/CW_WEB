@@ -1,68 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form to email</title>
     <link rel="stylesheet" href="comment.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <a href="#" class="logo"></a>
-      <ul>
-        <li><a href="../MainPage/Home.html">Home</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="../BuyProducts/Buy.html">Shop</a></li>
-        <li><a href="../Quiz/quiz.html">Quiz</a></li>
-        <li><a href="#">Sitemap</a></li>
-        <li class="active"><a href="../Comments/Comment.html">Comments</a></li>
-        <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
-      </ul>
+        <a href="#" class="logo"></a>
+        <ul>
+            <li><a href="../MainPage/Home.html">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="../BuyProducts/Buy.html">Shop</a></li>
+            <li><a href="../Quiz/quiz.html">Quiz</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li class="active"><a href="../Comments/Comment.html">Comments</a></li>
+            <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
+        </ul>
 
-      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-      <script type="text/javascript">
-        $(document).on("click", "ul li", function () {
-          $(this).addClass("active").siblings().removeClass();
-        });
-      </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(document).on("click", "ul li", function () {
+                $(this).addClass("active").siblings().removeClass();
+            });
+        </script>
     </header>
     <div class="container"></div>
     <form onsubmit="sendEmail(); reset(); return false;">
-      <h3>GET IN TOUCH</h3>
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Email Id" required />
-      <input type="text" id="phone" placeholder="Phone no." required />
-      <textarea
-        id="message"
-        rows="4"
-        placeholder="How can we help you?"
-      ></textarea>
-      <button type="submit">Send</button>
+        <h3>GET IN TOUCH</h3>
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Email Id" required />
+        <input type="text" id="phone" placeholder="Phone no." required />
+        <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+        <button type="submit">Send</button>
     </form>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-      function sendEmail() {
-        Email.send({
-          Host: "smtp.gmail.com",
-          Username: "pixelartwebcw",
-          Password: "pixelart@1234",
-          To: "pixelartwebcw@gmail.com",
-          From: document.getElementById("email").value,
-          Subject: "New Contact Form Enquiry",
-          Body:
-            "Name: " +
-            document.getElementById("name").value +
-            "<br> Email: " +
-            document.getElementById("email").value +
-            "<br> Phone no: " +
-            document.getElementById("phone").value +
-            "<br> Message: " +
-            document.getElementById("message").value,
-        }).then((message) => alert("Message Sent Succesfully"));
-      }
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "pixelartwebcw",
+                Password: "pixelart@1234",
+                To: "pixelartwebcw@gmail.com",
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enquiry",
+                Body:
+                    "Name: " +
+                    document.getElementById("name").value +
+                    "<br> Email: " +
+                    document.getElementById("email").value +
+                    "<br> Phone no: " +
+                    document.getElementById("phone").value +
+                    "<br> Message: " +
+                    document.getElementById("message").value,
+            }).then((message) => alert("Message Sent Succesfully"));
+        }
     </script>
-  </body>
+</body>
+
 </html>

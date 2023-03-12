@@ -1,125 +1,139 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Home Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
 
-  <body>
-    <div class="banner"></div>
+<head>
+  <meta charset="UTF-8" />
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
 
-    <header>
-      <a href="#" class="logo"></a>
-      <ul>
-        <li class="active"><a href="../MainPage/Home.html">Home</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="../BuyProducts/Buy.html">Shop</a></li>
-        <li><a href="../Quiz/quiz.html">Quiz</a></li>
-        <li><a href="#">Sitemap</a></li>
-        <li><a href="../Comments/Comment.html">Comments</a></li>
-        <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
-      </ul>
+<body>
+  <div class="banner"></div>
 
-      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-      <script type="text/javascript">
-        $(document).on("click", "ul li", function () {
-          $(this).addClass("active").siblings().removeClass();
-        });
-      </script>
-    </header>
+  <header>
+    <a href="#" class="logo"></a>
+    <ul>
+      <li class="active"><a href="../MainPage/Home.html">Home</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="../BuyProducts/Buy.html">Shop</a></li>
+      <li><a href="../Quiz/quiz.html">Quiz</a></li>
+      <li><a href="#">Sitemap</a></li>
+      <li><a href="../Comments/Comment.html">Comments</a></li>
+      <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
+    </ul>
 
-    <section>
-      <img src="neon.jpg" id="neon" />
-      <img src="Bg.png" id="Bg" />
-      <h2 id="text">Pixel Art</h2>
-      <a href="../BuyProducts/Buy.html" id="btn"
-        ><span></span>Purchase your Design Here</a
-      >
-
-      <img src="girl.png" id="girl" />
-    </section>
-
-    <section>
-      <div class="card card1">
-        <a href="../4ArtTypes/arttypes.html" id="crd"></a>
-        <h5>Digital Art</h5>
-        <p>
-          Digital art, once called computer art or new media art, refers to art
-          made using software, computers, or other electronic devices.
-        </p>
-        <button class="card-btn"></button>
-      </div>
-
-      <div class="card card2" onclick="location.href='handdrawn'">
-        <h5>Hand Drawn Art</h5>
-        <p>
-          In fine art, the term "drawing" may be defined as the linear
-          realization of visual objects, concepts, emotions, and fantasies,
-          including symbols and even abstract forms
-        </p>
-      </div>
-
-      <div class="card card3" onclick="location.href='ai'">
-        <h5>Ai Art</h5>
-        <p>
-          AI art refers to art generated with the assistance of artificial
-          intelligence
-        </p>
-      </div>
-
-      <div class="card card4" onclick="location.href='aesthatic'">
-        <h5>Aesthetic Art</h5>
-        <p>
-          Aesthetics is a discipline concerned with the perception,
-          appreciation, and production of art.
-        </p>
-      </div>
-    </section>
-
-    <div class="sec" id="sec">
-      <h2>Digital Art Gallery</h2>
-      <p>
-        Digital art refers to any form of artistic expression that is created
-        using digital technology. This can include computer graphics, digital
-        painting, 3D modeling, animation, and more. Digital art is often created
-        using specialized software and hardware, such as digital tablets and
-        styluses, graphic design programs, or video editing software.
-      </p>
-    </div>
-    <div class="scrollTop" onclick="scrollToTop();"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
-      window.addEventListener("scroll", function () {
-        var scroll = document.querySelector(".scrollTop");
-        scroll.classList.toggle("active", window.scrollY > 500);
-      });
-
-      function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      }
-    </script>
-
-    <script>
-      let neon = document.getElementById("neon");
-      let Bg = document.getElementById("Bg");
-      let text = document.getElementById("text");
-      let btn = document.getElementById("btn");
-      let girl = document.getElementById("girl");
-      let header = document.querySelector("header");
-
-      window.addEventListener("scroll", function () {
-        let value = window.scrollY;
-        neon.style.left = value * 0 + "px";
-        Bg.style.left = value * 4.5 + "px";
-        girl.style.right = value * 3.5 + "px";
-        text.style.marginTop = value * 4 + "px";
-        text.style.marginTop = value * 1.5 + "px";
-        btn.style.marginTop = value * 2.5 + "px";
-        header.style.top = value * 0.5 + "px";
+      $(document).on("click", "ul li", function () {
+        $(this).addClass("active").siblings().removeClass();
       });
     </script>
-  </body>
+  </header>
+
+  <section>
+    <img src="neon.jpg" id="neon" />
+    <img src="Bg.png" id="Bg" />
+    <h2 id="text">Pixel Art</h2>
+    <a href="../BuyProducts/Buy.html" id="btn"><span></span>Purchase your Design Here</a>
+
+    <img src="girl.png" id="girl" />
+  </section>
+
+  <section>
+    <div class="click">
+      <a href="../4ArtTypes/digitalart.html">
+        <div class="card card1">
+          <h5>Digital Art</h5>
+          <p>
+            Digital art, once called computer art or new media art, refers to
+            art made using software, computers, or other electronic devices.
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <div class="click">
+      <a href="../4ArtTypes/handdrawnart.html">
+        <div class="card card2">
+          <h5>Hand Drawn Art</h5>
+          <p>
+            In fine art, the term "drawing" may be defined as the linear
+            realization of visual objects, concepts, emotions, and fantasies,
+            including symbols and even abstract forms
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <div class="click">
+      <a href="../4ArtTypes/aiart.html">
+        <div class="card card3" onclick="location.href='../4ArtTypes/arttypes.html'">
+          <h5>Ai Art</h5>
+          <p>
+            AI art refers to art generated with the assistance of artificial
+            intelligence
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <div class="click">
+      <a href="../4ArtTypes/aesthaticart.html">
+        <div class="card card4" onclick="location.href='aesthatic'">
+          <h5>Aesthetic Art</h5>
+          <p>
+            Aesthetics is a discipline concerned with the perception,
+            appreciation, and production of art.
+          </p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <div class="sec" id="sec">
+    <h2>Digital Art Gallery</h2>
+    <p>
+      Digital art refers to any form of artistic expression that is created
+      using digital technology. This can include computer graphics, digital
+      painting, 3D modeling, animation, and more. Digital art is often created
+      using specialized software and hardware, such as digital tablets and
+      styluses, graphic design programs, or video editing software.
+    </p>
+  </div>
+  <div class="scrollTop" onclick="scrollToTop();"></div>
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var scroll = document.querySelector(".scrollTop");
+      scroll.classList.toggle("active", window.scrollY > 500);
+    });
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  </script>
+
+  <script>
+    let neon = document.getElementById("neon");
+    let Bg = document.getElementById("Bg");
+    let text = document.getElementById("text");
+    let btn = document.getElementById("btn");
+    let girl = document.getElementById("girl");
+    let header = document.querySelector("header");
+
+    window.addEventListener("scroll", function () {
+      let value = window.scrollY;
+      neon.style.left = value * 0 + "px";
+      Bg.style.left = value * 4.5 + "px";
+      girl.style.right = value * 3.5 + "px";
+      text.style.marginTop = value * 4 + "px";
+      text.style.marginTop = value * 1.5 + "px";
+      btn.style.marginTop = value * 2.5 + "px";
+      header.style.top = value * 0.5 + "px";
+    });
+  </script>
+</body>
+
 </html>

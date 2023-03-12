@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="quiz.css" />
-    <title>Quiz</title>
-  </head>
-  <body>
-    <header>
-      <a href="#" class="logo"></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="quiz.css" />
+  <title>Quiz</title>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo"></a>
+    <ul>
+      <li><a href="../MainPage/Home.html">Home</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="../BuyProducts/Buy.html">Shop</a></li>
+      <li class="active"><a href="../Quiz/quiz.html">Quiz</a></li>
+      <li><a href="#">Sitemap</a></li>
+      <li><a href="#">Comments</a></li>
+      <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
+    </ul>
+  </header>
+  <div class="quiz-container" id="quiz">
+    <div class="quiz-header">
+      <h2 id="question">Question Text</h2>
       <ul>
-        <li><a href="../MainPage/Home.html">Home</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="../BuyProducts/Buy.html">Shop</a></li>
-        <li class="active"><a href="../Quiz/quiz.html">Quiz</a></li>
-        <li><a href="#">Sitemap</a></li>
-        <li><a href="#">Comments</a></li>
-        <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer" />
+          <label for="a" id="a_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="b" class="answer" />
+          <label for="b" id="b_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="c" class="answer" />
+          <label for="c" id="c_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="d" class="answer" />
+          <label for="d" id="d_text">Answer</label>
+        </li>
       </ul>
-    </header>
-    <div class="quiz-container" id="quiz">
-      <div class="quiz-header">
-        <h2 id="question">Question Text</h2>
-        <ul>
-          <li>
-            <input type="radio" name="answer" id="a" class="answer" />
-            <label for="a" id="a_text">Answer</label>
-          </li>
-
-          <li>
-            <input type="radio" name="answer" id="b" class="answer" />
-            <label for="b" id="b_text">Answer</label>
-          </li>
-
-          <li>
-            <input type="radio" name="answer" id="c" class="answer" />
-            <label for="c" id="c_text">Answer</label>
-          </li>
-
-          <li>
-            <input type="radio" name="answer" id="d" class="answer" />
-            <label for="d" id="d_text">Answer</label>
-          </li>
-        </ul>
-      </div>
-
-      <button id="submit">Submit</button>
     </div>
 
-    <video id="bg-video" autoplay muted loop>
-      <source
-        src="plexus abstract network business technology science background loop.mp4"
-        type="video/mp4"
-      />
-      <!-- Add more source tags for other video formats -->
-    </video>
+    <button id="submit">Submit</button>
+  </div>
 
-    <style>
-      #bg-video {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1;
-      }
-    </style>
+  <video id="bg-video" autoplay muted loop>
+    <source src="plexus abstract network business technology science background loop.mp4" type="video/mp4" />
+    <!-- Add more source tags for other video formats -->
+  </video>
 
-    <script src="quiz.js"></script>
-  </body>
+  <style>
+    #bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+  </style>
+
+  <script src="quiz.js"></script>
+</body>
+
 </html>
