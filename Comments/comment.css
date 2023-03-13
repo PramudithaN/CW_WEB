@@ -1,62 +1,67 @@
 * {
+  background-color: #141414;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins", "sans-serif";
 }
 
-.container
-{
-  width: auto;
-  height: 100vh;
-  background-image: url(madusara.jfif);
-  display: flex;
-  align-items: center;
-  padding-top: 90px;
-  justify-content: center;
+h1 {
+  color: white;
+  padding-top: 140px;
+  text-align: center;
+  font-size: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-form {
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  display: flex;
-  flex-direction: column;;
-  padding: 2vw 4vw;
-  width: 90%;
-  max-width: 600px;
+input {
+  padding-top: 100px;
+  background-color: #fff;
+  width: 600px;
+  margin-left: 480px;
+  font-size: 20px;
+  padding: 16px 16px;
   border-radius: 10px;
-}
-
-form h3 {
-  padding-left: 170px;
-  align-items: center;
-  color: rgb(226, 43, 43);
-  font-weight: 800;
+  border-color: black;
   margin-bottom: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-form input,
-form textarea {
-  border: 0;
-  border-radius: 15px;
-  margin: 10px 0;
-  padding: 20px;
-  outline: none;
-  background: aliceblue;
-  font-size: 16;
+textarea {
+  background-color: white;
+  width: 600px;
+  margin-left: 480px;
+  font-size: 20px;
+  padding: 16px 16px;
+  border-radius: 10px;
+  border-color: black;
+  margin-bottom: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-form button {
-  padding: 15px;
-  background: #ff5361;
-  color: #fff;
-  font-size: 18px;
-  border: 0;
+input:focus-widthin {
   outline: none;
-  cursor: pointer;
-  width: 150px;
-  margin: 20px auto 0;
+  border-color: rgb(255, 127, 127);
+  border-width: 3px;
+}
+
+button {
+  background-color: rgb(215, 250, 225);
   border-radius: 30px;
+  border-color: black;
+  font-size: 22px;
+  padding: 10px 18px;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 80%;
+  transform: translateY(3px);
+  cursor: pointer;
 }
 
 header {

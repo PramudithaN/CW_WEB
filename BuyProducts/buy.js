@@ -109,5 +109,4 @@ function updateTotal(){
         total = Math.round(total * 100)/100;
 
         document.getElementsByClassName('total-price')[0].innerText = '$' + total;
-    
 }
