@@ -249,11 +249,13 @@ span {
 }
 
 .sec p {
+  text-align: justify;
+  align-items: justify;
   font-size: 1 em;
   color: #fff;
 }
 
-/* Splash Screen */
+/* Splash Screen
 .intro{
   position: fixed;
   z-index: 100;
@@ -263,7 +265,7 @@ span {
   height: 100vh;
   background-color: #161616;
   transition: 1s;
-}
+} */
 
 .logo header{
   position: absolute;
@@ -290,4 +292,13 @@ span {
   bottom: 150px;
   opacity: 0;
   transform: ease-in-out 0.5s;
+}
+
+#preloader{
+  background: #ffffff url(Loader.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  object-position: top;
 }
