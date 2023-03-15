@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"></a>
+        <ul>
+          <li><a href="../MainPage/Home.html">Home</a></li>
+          <li class="active"><a href="../Gallery/Gallery.html">Gallery</a></li>
+          <li><a href="../BuyProducts/Buy.html">Shop</a></li>
+          <li><a href="../Quiz/quiz.html">Quiz</a></li>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="../Comments/Comment.html">Comments</a></li>
+          <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
+        </ul>
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+          $(document).on("click", "ul li", function () {
+            $(this).addClass("active").siblings().removeClass();
+          });
+        </script>
+      </header>
+        <div class="sample-header">
+            <!-- <div class="overlay"></div> -->
+            <div class="sample-header-section">
+              <h1>Let's explore gallery</h1>
+            </div>
+            <div class="sample-header-section2">
+                <h1>hello</h1>
+            </div>
+        </div>
+        <div class="sample-section-wrap">
+            <div class="overlay"></div>
+            <div class="sample-section">
+                <div class="gallery">
+                    <div class="gallery__column">
+                        <a href="images/1.jpg" target="_blank" class="gallery__link">
+                            <figure class="gallery__thumb">
+                                <img src="images/1.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
+                                <figcaption class="gallery__caption">Portrait by Jessica Felicio</figcaption>
+                            </figure>
+                        </a>
+                
+                        <a href="images/2.jpg" target="_blank" class="gallery__link">
+                            <figure class="gallery__thumb">
+                                <img src="images/2.jpg" alt="Portrait by Oladimeji Odunsi" class="gallery__image">
+                                <figcaption class="gallery__caption">Portrait by Oladimeji Odunsi</figcaption>
+                            </figure>
+                        </a>
+                
+                        <a href="https://unsplash.com/@a2eorigins" target="_blank" class="gallery__link">
+                            <figure class="gallery__thumb">
+                                <img src="images/17.jpg" alt="Portrait by Alex Perez" class="gallery__image">
+                                <figcaption class="gallery__caption">Portrait by Alex Perez</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    
+                    <div class="gallery__column">
+                        <a href="https://unsplash.com/@noahbuscher" target="_blank" class="gallery__link">
+                            <figure class="gallery__thumb">
+                                <img src="images/4.png" alt="Portrait by Noah Buscher" class="gallery__image">
+                                <figcaption class="gallery__caption">Portrait by Noah Buscher</figcaption>
+                            </figure>
+                        </a>
+                        
+                        <a href="https://unsplash.com/@von_co" target="_blank" class="gallery__link">
+                            <figure class="gallery__thumb">
+                                <img src="images/8.jpg" alt="Portrait by Ivana Cajina" class="gallery__image">
+                                <figcaption class="gallery__caption">Portrait by Ivana Cajina</figcaption>
+                            </figure>
+                        </a>
+                
+                        <a href="https://unsplash.com/@samburriss" target="_blank" class="gallery__link">
+                            <figure class="gallery__thumb">
+                                <img src="images/9.jpg" alt="Portrait by Sam Burriss" class="gallery__image">
+                                <figcaption class="gallery__caption">Portrait by Sam Burriss</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    
+                    <div class="gallery__column">
+                        <a href="https://unsplash.com/@marilezhava" target="_blank" class="gallery__link">
+                            <figure class="gallery__thumb">
+                                <img src="images/10.jpg" alt="Portrait by Mari Lezhava" class="gallery__image">
+                                <figcaption class="gallery__caption">Portrait by Mari Lezhava</figcaption>
+                            </figure>
+                        </a>
+                        
+                        <a href="https://unsplash.com/@ethanhaddox" target="_blank" class="gallery__link">
+                            <figure class="gallery__thumb">
+                                <img src="images/11.jpg" alt="Portrait by Ethan Haddox" class="gallery__image">
+                                <figcaption class="gallery__caption">Portrait by Ethan Haddox</figcaption>
+                            </figure>
+                        </a>
+                
+                        <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
+                            <figure class="gallery__thumb">
+                                <img src="images/12.jpg" alt="Portrait by Amir Geshani" class="gallery__image">
+                                <figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    
+                    <div class="gallery__column">
+                        <a href="https://unsplash.com/@frxgui" target="_blank" class="gallery__link">
+                            <figure class="gallery__thumb">
+                                <img src="images/13.jpg" alt="Portrait by Guilian Fremaux" class="gallery__image">
+                                <figcaption class="gallery__caption">Portrait by Guilian Fremaux</figcaption>
+                            </figure>
+                        </a>
+                
+                        <a href="https://unsplash.com/@majestical_jasmin" target="_blank" class="gallery__link">
+                            <figure class="gallery__thumb">
+                                <img src="images/14.jpg" alt="Portrait by Jasmin Chew" class="gallery__image">
+                                <figcaption class="gallery__caption">Portrait by Jasmin Chew</figcaption>
+                            </figure>
+                        </a>
+                        
+                        <a href="https://unsplash.com/@dimadallacqua" target="_blank" class="gallery__link">
+                            <figure class="gallery__thumb">
+                                <img src="images/16.jpg" alt="Portrait by Dima DallAcqua" class="gallery__image">
+                                <figcaption class="gallery__caption">Portrait by Dima DallAcqua</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function parallax_height() {
+            var scroll_top = $(this).scrollTop();
+            var sample_section_top = $(".sample-section").offset().top;
+            var header_height = $(".sample-header-section").outerHeight();
+            $(".sample-section").css({ "margin-top": header_height });
+            $(".sample-header").css({ height: header_height - scroll_top });
+            }
+            parallax_height();
+            $(window).scroll(function() {
+            parallax_height();
+            });
+            $(window).resize(function() {
+            parallax_height();
+            });
+        </script>
+
+      
+</body>
+</html>
