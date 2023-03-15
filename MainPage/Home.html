@@ -5,9 +5,14 @@
   <meta charset="UTF-8" />
   <title>Home Page</title>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
   <link rel="stylesheet" type="text/css" href="style.css" />
+  
 </head>
+
+<!-- <div id="preloader"></div> -->
+<!-- <div id="preloader"> -->
+ 
 
 <body>
   <div class="banner"></div>
@@ -16,7 +21,7 @@
     <a href="#" class="logo"></a>
     <ul>
       <li class="active"><a href="../MainPage/Home.html">Home</a></li>
-      <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+      <li><a href="#">Gallery</a></li>
       <li><a href="../BuyProducts/Buy.html">Shop</a></li>
       <li><a href="../Quiz/quiz.html">Quiz</a></li>
       <li><a href="#">Sitemap</a></li>
@@ -71,7 +76,8 @@
       <a href="../4ArtTypes/aiart.html">
         <div class="card card3" onclick="location.href='../4ArtTypes/arttypes.html'">
           <h5>Ai Art</h5>
-          <p>
+          
+          <p> 
             AI art refers to art generated with the assistance of artificial
             intelligence
           </p>
@@ -100,6 +106,7 @@
       In addition to selling artworks, the website offers educational programming and events to engage with the art community.
     </p>
   </div>
+  
   <div class="scrollTop" onclick="scrollToTop();"></div>
   <script type="text/javascript">
     window.addEventListener("scroll", function () {
@@ -134,6 +141,26 @@
       header.style.top = value * 0.5 + "px";
     });
   </script>
+
+<!-- <script>
+  var loader= document.getElementById("preloader");
+  window.addEventListener("load", function(){
+    loader.style.display= "none";
+    header.style.display= "none";
+  },4000)
+</script> -->
+
+<!-- <script>
+  var loader = document.getElementById("preloader");
+  var header = document.querySelector("header");
+  window.addEventListener("load", function () {
+    Wait for 4 seconds before hiding the elements
+    setTimeout(function () {
+      loader.style.display = "none";
+      header.style.display = "none";
+    }, 4000);
+  });
+</script> -->
 
 </body>
 
