@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
     <header>
@@ -26,130 +27,150 @@
             $(this).addClass("active").siblings().removeClass();
           });
         </script>
-      </header>
-        <div class="sample-header">
-            <!-- <div class="overlay"></div> -->
-            <div class="sample-header-section">
-              <h1>Let's explore gallery</h1>
-            </div>
-            <div class="sample-header-section2">
-                <h1>hello</h1>
-            </div>
+    </header>
+    <div class="sample-header">
+        <!-- <div class="overlay"></div> -->
+        <div class="sample-header-section">
+            <h1>Let's explore gallery</h1>
         </div>
-        <div class="sample-section-wrap">
-            <div class="overlay"></div>
-            <div class="sample-section">
-                <div class="gallery">
-                    <div class="gallery__column">
-                        <a href="images/1.jpg" target="_blank" class="gallery__link">
-                            <figure class="gallery__thumb">
-                                <img src="images/1.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
-                                <figcaption class="gallery__caption">Portrait by Jessica Felicio</figcaption>
-                            </figure>
-                        </a>
+    </div>
+    <div class="sample-section-wrap">
+        <div class="overlay"></div>
+        <div class="sample-section">
+            <div class="gallery">
+                <div class="gallery__column">
+                    <div class="gallery__link">
+                        <figure class="gallery__thumb">
+                            <img src="images/1.jpg" alt="Portrait by Jessica Felicio" class="gallery__image">
+                            <figcaption class="gallery__caption">Digital Eye</figcaption>
+                        </figure>
+                    </div>
+            
+                    <div class="gallery__link">
+                        <figure class="gallery__thumb">
+                            <img src="images/2.jpg" alt="Portrait by Oladimeji Odunsi" class="gallery__image">
+                            <figcaption class="gallery__caption">Robot</figcaption>
+                        </figure>
+                    </div>
+            
+                    <div class="gallery__link">
+                        <figure class="gallery__thumb">
+                            <img src="images/17.jpg" alt="Portrait by Alex Perez" class="gallery__image">
+                            <figcaption class="gallery__caption">Smoking Skull</figcaption>
+                        </figure>
+                    </div>
+                </div>
                 
-                        <a href="images/2.jpg" target="_blank" class="gallery__link">
-                            <figure class="gallery__thumb">
-                                <img src="images/2.jpg" alt="Portrait by Oladimeji Odunsi" class="gallery__image">
-                                <figcaption class="gallery__caption">Portrait by Oladimeji Odunsi</figcaption>
-                            </figure>
-                        </a>
-                
-                        <a href="https://unsplash.com/@a2eorigins" target="_blank" class="gallery__link">
-                            <figure class="gallery__thumb">
-                                <img src="images/17.jpg" alt="Portrait by Alex Perez" class="gallery__image">
-                                <figcaption class="gallery__caption">Portrait by Alex Perez</figcaption>
-                            </figure>
-                        </a>
+                <div class="gallery__column">
+                    <div class="gallery__link">
+                        <figure class="gallery__thumb">
+                            <img src="images/4.png" alt="Portrait by Noah Buscher" class="gallery__image">
+                            <figcaption class="gallery__caption">Captain Eagle</figcaption>
+                        </figure>
                     </div>
                     
-                    <div class="gallery__column">
-                        <a href="https://unsplash.com/@noahbuscher" target="_blank" class="gallery__link">
-                            <figure class="gallery__thumb">
-                                <img src="images/4.png" alt="Portrait by Noah Buscher" class="gallery__image">
-                                <figcaption class="gallery__caption">Portrait by Noah Buscher</figcaption>
-                            </figure>
-                        </a>
-                        
-                        <a href="https://unsplash.com/@von_co" target="_blank" class="gallery__link">
-                            <figure class="gallery__thumb">
-                                <img src="images/8.jpg" alt="Portrait by Ivana Cajina" class="gallery__image">
-                                <figcaption class="gallery__caption">Portrait by Ivana Cajina</figcaption>
-                            </figure>
-                        </a>
+                    <div class="gallery__link">
+                        <figure class="gallery__thumb">
+                            <img src="images/8.jpg" alt="Portrait by Ivana Cajina" class="gallery__image">
+                            <figcaption class="gallery__caption">Liquid Metal</figcaption>
+                        </figure>
+                    </div>
+            
+                    <div class="gallery__link">
+                        <figure class="gallery__thumb">
+                            <img src="images/9.jpg" alt="Portrait by Sam Burriss" class="gallery__image">
+                            <figcaption class="gallery__caption">AI-Generated Robot Women</figcaption>
+                        </figure>
+                    </div>
+                </div>
                 
-                        <a href="https://unsplash.com/@samburriss" target="_blank" class="gallery__link">
-                            <figure class="gallery__thumb">
-                                <img src="images/9.jpg" alt="Portrait by Sam Burriss" class="gallery__image">
-                                <figcaption class="gallery__caption">Portrait by Sam Burriss</figcaption>
-                            </figure>
-                        </a>
+                <div class="gallery__column">
+                    <div class="gallery__link">
+                        <figure class="gallery__thumb">
+                            <img src="images/10.jpg" alt="Portrait by Mari Lezhava" class="gallery__image">
+                            <figcaption class="gallery__caption">Dreaming Girl</figcaption>
+                        </figure>
                     </div>
                     
-                    <div class="gallery__column">
-                        <a href="https://unsplash.com/@marilezhava" target="_blank" class="gallery__link">
-                            <figure class="gallery__thumb">
-                                <img src="images/10.jpg" alt="Portrait by Mari Lezhava" class="gallery__image">
-                                <figcaption class="gallery__caption">Portrait by Mari Lezhava</figcaption>
-                            </figure>
-                        </a>
-                        
-                        <a href="https://unsplash.com/@ethanhaddox" target="_blank" class="gallery__link">
-                            <figure class="gallery__thumb">
-                                <img src="images/11.jpg" alt="Portrait by Ethan Haddox" class="gallery__image">
-                                <figcaption class="gallery__caption">Portrait by Ethan Haddox</figcaption>
-                            </figure>
-                        </a>
+                    <div class="gallery__link">
+                        <figure class="gallery__thumb">
+                            <img src="images/11.jpg" alt="Portrait by Ethan Haddox" class="gallery__image">
+                            <figcaption class="gallery__caption">Calm Girl</figcaption>
+                        </figure>
+                    </div>
+            
+                    <div class="gallery__link">
+                        <figure class="gallery__thumb">
+                            <img src="images/12.jpg" alt="Portrait by Amir Geshani" class="gallery__image">
+                            <figcaption class="gallery__caption">Queen Esprenza</figcaption>
+                        </figure>
+                    </div>
+                </div>
                 
-                        <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
-                            <figure class="gallery__thumb">
-                                <img src="images/12.jpg" alt="Portrait by Amir Geshani" class="gallery__image">
-                                <figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
-                            </figure>
-                        </a>
+                <div class="gallery__column">
+                    <div class="gallery__link">
+                        <figure class="gallery__thumb">
+                            <img src="images/13.jpg" alt="Portrait by Guilian Fremaux" class="gallery__image">
+                            <figcaption class="gallery__caption">Stylish Clemenza</figcaption>
+                        </figure>
+                    </div>
+            
+                    <div class="gallery__link">
+                        <figure class="gallery__thumb">
+                            <img src="images/14.jpg" alt="Portrait by Jasmin Chew" class="gallery__image">
+                            <figcaption class="gallery__caption">Thoughtful Lovina Portrait</figcaption>
+                        </figure>
                     </div>
                     
-                    <div class="gallery__column">
-                        <a href="https://unsplash.com/@frxgui" target="_blank" class="gallery__link">
-                            <figure class="gallery__thumb">
-                                <img src="images/13.jpg" alt="Portrait by Guilian Fremaux" class="gallery__image">
-                                <figcaption class="gallery__caption">Portrait by Guilian Fremaux</figcaption>
-                            </figure>
-                        </a>
-                
-                        <a href="https://unsplash.com/@majestical_jasmin" target="_blank" class="gallery__link">
-                            <figure class="gallery__thumb">
-                                <img src="images/14.jpg" alt="Portrait by Jasmin Chew" class="gallery__image">
-                                <figcaption class="gallery__caption">Portrait by Jasmin Chew</figcaption>
-                            </figure>
-                        </a>
-                        
-                        <a href="https://unsplash.com/@dimadallacqua" target="_blank" class="gallery__link">
-                            <figure class="gallery__thumb">
-                                <img src="images/16.jpg" alt="Portrait by Dima DallAcqua" class="gallery__image">
-                                <figcaption class="gallery__caption">Portrait by Dima DallAcqua</figcaption>
-                            </figure>
-                        </a>
+                    <div class="gallery__link">
+                        <figure class="gallery__thumb">
+                            <img src="images/16.jpg" alt="Portrait by Dima DallAcqua" class="gallery__image">
+                            <figcaption class="gallery__caption">Slaying Kingfisher</figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
         </div>
-        <script type="text/javascript">
-            function parallax_height() {
-            var scroll_top = $(this).scrollTop();
-            var sample_section_top = $(".sample-section").offset().top;
-            var header_height = $(".sample-header-section").outerHeight();
-            $(".sample-section").css({ "margin-top": header_height });
-            $(".sample-header").css({ height: header_height - scroll_top });
-            }
-            parallax_height();
-            $(window).scroll(function() {
-            parallax_height();
-            });
-            $(window).resize(function() {
-            parallax_height();
-            });
-        </script>
+    </div>
+    <script type="text/javascript">
+        function parallax_height() {
+        var scroll_top = $(this).scrollTop();
+        var sample_section_top = $(".sample-section").offset().top;
+        var header_height = $(".sample-header-section").outerHeight();
+        $(".sample-section").css({ "margin-top": header_height });
+        $(".sample-header").css({ height: header_height - scroll_top });
+        }
+        parallax_height();
+        $(window).scroll(function() {
+        parallax_height();
+        });
+        $(window).resize(function() {
+        parallax_height();
+        });
+    </script>
+    <div class="preview-box">
+        <div class="details">
+          <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+          <span class="icon fas fa-times"></span>
+        </div>
+        <div class="image-box">
+          <img src="" alt="">
+          <div class="description-box">
+            <h2 class="dsc_tittle">Digital eye</h2>
+            <p class="description"></p>
+          </div> 
+          <div class="slide prev"><i class="fas fa-angle-left"></i></div>
+          <div class="slide next"><i class="fas fa-angle-right"></i></div> 
+        </div>
+
+        
+      </div>
+      <div class="shadow"></div>
+      <script src="script.js"></script>
+
+    </div>
+
+
 
 
 <div class="scrollTop" onclick="scrollToTop();"></div>

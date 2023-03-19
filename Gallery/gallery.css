@@ -203,6 +203,7 @@ h2 {
   display: block;
   width: 100%;
   transition: 0.3s;
+  padding: 5px;
 }
 .gallery__image:hover {
   transform: scale(1.1);
@@ -243,5 +244,152 @@ h2 {
   visibility: visible;
   opacity: 1;
 }
+
+.preview-box{
+  position: fixed;
+  max-width: 950px;
+  z-index: 5;
+  max-height: 700px;
+  width: 100%;
+  top: 12%;
+  left: 20%;
+  background-color: rgb(10, 38, 71);
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preview-box.show{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.shadow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  background: rgba(0,0,0,0.4);
+}
+
+.preview-box .details{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px 12px 10px;
+  align-items: center;
+
+}
+
+
+
+.preview-box .image-box{
+  display: flex;
+}
+
+.image-box .slide{
+  position : absolute;
+  top : 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  cursor: pointer;
+  z-index: 3;
+  color : #fff;
+  width: 60px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  opacity: 0.2;
+}
+
+
+.image-box .slide.prev{
+  left:0;
+  opacity: 0.2;
+}
+
+.image-box .slide.prev:hover{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.image-box .slide.next{
+  right:0;
+  opacity: 0.2;
+}
+
+.image-box .slide.next:hover{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.preview-box .details .icon{
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  opacity: 0.2;
+}
+
+.preview-box .details .icon:hover{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+
+.details .title{
+  display: flex;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.details .title p{
+  margin: 0 5px;
+}
+
+.details .title p.current-img{
+  font-weight: 500;
+}
+
+.description-box {
+
+  position: relative;
+  top: 20px;
+  left: 20px;
+  padding: 20px;
+  justify-content: center;
+  color: rgb(44, 116, 179);
+  max-height: 300px;
+  
+
+}
+
+.description-box p{
+  font-size: 15px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+
+.description-box h2{
+  padding-bottom: 20px;
+}
+
+
+.image-box img{
+  float: left;
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.image-box .description-box{
+  max-height: 400px;
+  max-width: 500px;
+}
+
+
 
 
