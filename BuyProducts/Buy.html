@@ -67,7 +67,7 @@
         </h1> -->
 
 
-        <section>
+        <section class="sec">
         <h2 class="section-title">Shop Products</h2>
         <div>
             <!-- <a href="#" class="logo"></a> -->
@@ -83,10 +83,15 @@
                         <div class="total-price">$0</div>
                     </div>
                     <button type="button" class="btn-buy">Buy Now</button>
+                    
                     <i class='bx bx-x' id="close-cart"></i>
                 </div>
-            </section>
+            
+            
         </div>
+    </section>
+
+    <section>
         <div class="shop-content">
             <div class="product-box">
                 <img src="ai1.jpg" alt="" class="product-img" />
@@ -245,6 +250,7 @@
                 <i class="bx bxs-shopping-bag-alt add-cart"></i>
             </div>
         </div>
+        
     </section>
 
     <script src="buy.js"></script>
@@ -263,4 +269,21 @@
             z-index: -1;
         }
     </style>
+
+
+<div class="scrollTop" onclick="scrollToTop();"></div>
+<script type="text/javascript">
+  window.addEventListener("scroll", function () {
+    var scroll = document.querySelector(".scrollTop");
+    scroll.classList.toggle("active", window.scrollY > 500);
+  });
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+</script>
+
 </body>
