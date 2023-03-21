@@ -193,18 +193,19 @@ section img {
 
 span {
   background: #2b1055;
-  height: 100%;
-  width: 0;
+  height: 0%;
+  width: 100%;
   position: absolute;
   border-radius: 40px;
   left: 0;
   bottom: 0;
   z-index: -1;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 #btn:hover span {
-  width: 100%;
+  /* width: 100%; */
+  height: 100%;
 }
 
 #btn:hover {
@@ -302,3 +303,51 @@ span {
   z-index: 100;
   object-position: top;
 }
+
+footer {
+  position: relative;
+  padding: 100px;
+  /* background: #0c0522; */
+  
+}
+
+/* .footer h2 {
+  justify-items: center;
+  padding-left: 300px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #fff;
+} */
+
+/* .footer a {
+  text-align: justify;
+  align-items: center;
+  padding-left: 650px;
+  font-size: 1.6 em;
+  color: #fff;
+} */
+/* #icon{
+  padding-left: 100px;
+  width: 400px;
+  height: 200px;
+} */
+
+
+/* #icon {
+  width: 200px;
+  height: 100px;
+  padding-left: 1530px;
+  position: absolute;
+  display: inline-block;
+  border-radius: 100px;
+  background-image: url(aiart.jpg);
+  background-size: cover;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 1.5em;
+  z-index: 9;
+  transform: translateY(100px);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+} */
