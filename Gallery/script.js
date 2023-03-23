@@ -190,4 +190,62 @@ window.onload = ()=>{
         }
         
     }
+    settingBtn = document.querySelector(".switcher-btn");
+    colorSwitcher = document.querySelector(".theme-selector");
+    settingBtn.onclick = ()=>{
+    colorSwitcher.classList.toggle('active');
+    
+
+    colorButton = document.querySelectorAll(".theme-buttons");
+    colorButton.forEach(color => {
+        color.addEventListener('click',() => {
+            let dataColor = color.getAttribute('data-color');
+            let backgroundImage = color.getAttribute('data-background-image');
+            let fontColor = color.getAttribute('data-font-color');
+            document.querySelector(':root').style.setProperty('--main-color',dataColor);
+            document.querySelector(':root').style.setProperty('--background-image',backgroundImage);
+            document.querySelector(':root').style.setProperty('--font-color',fontColor);
+            document.querySelector(".sample-header").classList.add("transition");
+            colorSwitcher.classList.remove('active');
+        });
+        
+    });
+
+    let fontSize = "";
+    let h2FontSize = "";
+    fontSizeBtn1 = document.querySelector(".font-1");
+    fontSizeBtn1.onclick = ()=>{
+        fontSize = fontSizeBtn1.getAttribute("data-font-size");
+        h2FontSize = fontSizeBtn1.getAttribute("data-h2-font-size");
+        document.querySelector(':root').style.setProperty('--font-size',fontSize);
+        document.querySelector(':root').style.setProperty('--h2-font-size',h2FontSize);
+    }
+    fontSizeBtn2 = document.querySelector(".font-2");
+    fontSizeBtn2.onclick = ()=>{
+        fontSize = fontSizeBtn2.getAttribute("data-font-size");
+        h2FontSize = fontSizeBtn2.getAttribute("data-h2-font-size");
+        document.querySelector(':root').style.setProperty('--font-size',fontSize);
+        document.querySelector(':root').style.setProperty('--h2-font-size',h2FontSize);
+    }
+
+    fontSizeBtn3 = document.querySelector(".font-3");
+    fontSizeBtn3.onclick = ()=>{
+        fontSize = fontSizeBtn3.getAttribute("data-font-size");
+        h2FontSize = fontSizeBtn3.getAttribute("data-h2-font-size");
+        document.querySelector(':root').style.setProperty('--font-size',fontSize);
+        document.querySelector(':root').style.setProperty('--h2-font-size',h2FontSize);
+    }
+
+    document.addEventListener("scroll", (event) => {
+        document.querySelector(".sample-header").classList.remove("transition");
+    });
+    
+
 }
+}
+// colorBtn = document.querySelector(".switcher-btn");
+// colorSwitcher = document.querySelector(".theme-selector");
+// colorBtn.onclick = ()=>{
+//     colorSwitcher.classList.toggle('active');
+
+// }
