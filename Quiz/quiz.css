@@ -128,3 +128,27 @@ header ul li a:hover {
 body::-webkit-scrollbar {
   display: none;
 }
+
+#fixed-btn {
+  /* display: flex; */
+  width: 140px;
+    margin: 0.3rem auto 0 auto;
+    padding: 12px 20px;
+    position: fixed;
+    top: 150px;
+    right: -10px;
+    border: #ffffff;
+    border-radius: 10px;
+    background-color: #008cff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#fixed-btn:hover {
+  background: #0ccc2c;
+  transform: translateY(3px);
+  cursor: pointer;
+}
