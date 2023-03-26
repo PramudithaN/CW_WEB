@@ -3,7 +3,7 @@
 * {
   /* background-color: #141414; */
   /* backdrop-filter: blur(1px); */
-background-color: rgba(34, 34, 34, 0.3);
+/* background-color: rgba(34, 34, 34, 0.3); */
 background-size: cover;
   margin: 0;
   padding: 0;
@@ -27,7 +27,7 @@ input {
   font-size: 20px;
   padding: 16px 16px;
   border-radius: 10px;
-  border-color: black;
+  border-color: rgb(2, 122, 44);
   margin-bottom: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -39,14 +39,14 @@ textarea {
   font-size: 20px;
   padding: 16px 16px;
   border-radius: 10px;
-  border-color: black;
+  border-color: rgb(2, 122, 44);
   margin-bottom: 25px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 input:focus-widthin {
   outline: none;
-  border-color: rgb(255, 127, 127);
+  border-color: rgb(2, 122, 44);
   border-width: 3px;
 }
 

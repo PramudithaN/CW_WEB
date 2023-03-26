@@ -413,6 +413,7 @@ h2 {
   right: -160px;
   padding: 10px;
   background: rgb(var(--main-color));
+  border-radius:4px;
   z-index: 10;
   transition: 1.2s;
 }
@@ -429,7 +430,6 @@ h2 {
   font-size: 15px;
   margin-bottom: 10px;
   border-bottom: 1px solid white;
- 
   text-align: center;
   opacity: 1;
 }
@@ -440,6 +440,7 @@ h2 {
   left: -45px;
   color: white;
   background: rgb(var(--main-color));
+  border-radius:5px;
   padding: 5px 10px;
   cursor: pointer;
   font-size: 25px;
@@ -506,11 +507,6 @@ h2 {
   bottom: 0;
   cursor: pointer;
 }
-
-
-
-
-
 
 .scrollTop {
   position: fixed;
