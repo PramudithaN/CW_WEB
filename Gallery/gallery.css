@@ -429,7 +429,6 @@ h2 {
   font-size: 15px;
   margin-bottom: 10px;
   border-bottom: 1px solid white;
- 
   text-align: center;
   opacity: 1;
 }
@@ -440,6 +439,7 @@ h2 {
   left: -45px;
   color: white;
   background: rgb(var(--main-color));
+  border-radius:5px;
   padding: 5px 10px;
   cursor: pointer;
   font-size: 25px;
@@ -512,11 +512,6 @@ h2 {
   cursor: pointer;
 }
 
-
-
-
-
-
 .scrollTop {
   position: fixed;
   bottom: 40px;
@@ -540,5 +535,38 @@ h2 {
   opacity: 1;
 }
 
+/* #fixed-btn {
+  position: fixed;
+  top: 150px;
+  right: -10px;
+  background-color: #008cff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+} */
 
+#fixed-btn {
+  /* display: flex; */
+    margin: 0.3rem auto 0 auto;
+    padding: 12px 20px;
+    position: fixed;
+    top: 150px;
+    right: -10px;
+    border: #ffffff;
+    border-radius: 10px;
+    background-color: #008cff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#fixed-btn:hover {
+  background: #0ccc2c;
+  transform: translateY(3px);
+  cursor: pointer;
+}
 

@@ -13,10 +13,11 @@
 }
 
 * {
-  border: 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -46,7 +47,8 @@ body {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 100px;
+  padding-bottom: -10px;
   /* padding: var(--spacing-l); */
 }
 
@@ -63,7 +65,7 @@ body {
 }
 
 .card {
-  /* padding-top: 90px; */
+  /* padding-top: 60px; */
   list-style: none;
   position: relative;
 }
@@ -180,4 +182,31 @@ body::-webkit-scrollbar {
   position: fixed;
   padding-top: 40px;
   color: #fff;
+}
+
+#fixed-btn {
+  /* display: flex; */
+  width: 140px;
+  height: 50px;
+    margin: 0.3rem auto 0 auto;
+    padding: 12px 20px;
+    position: fixed;
+    top: 150px;
+    right: -10px;
+    border: #ffffff;
+    border-radius: 10px;
+    background-color: #008cff;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#fixed-btn:hover {
+  background: #0ccc2c;
+  transform: translateY(3px);
+  cursor: pointer;
 }
