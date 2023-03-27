@@ -123,7 +123,10 @@ window.onload = ()=>{
         let newIndex = i;
         let clickImageIndex;
         gallery[i].onclick = ()=>{
-
+            
+            font1Btn = document.querySelector('.font-1');
+            font2Btn = document.querySelector('.font-2');
+            font3Btn = document.querySelector('.font-3');
             
             clickImageIndex = newIndex;
             console.log(i);
@@ -133,6 +136,9 @@ window.onload = ()=>{
                 previewImg.src = selectedImageUrl;
                 description.textContent = descriptions[newIndex];
                 descriptionTitle.textContent = tittles[newIndex];
+                font1Btn.textContent = "A";
+                font2Btn.textContent = "A";
+                font3Btn.textContent = "A";
             }
             
 
@@ -186,6 +192,9 @@ window.onload = ()=>{
                 prevButton.style.display = "block";
                 previewBox.classList.remove("show");
                 shadow.style.display = "none";
+                font1Btn.textContent = "";
+                font2Btn.textContent = "";
+                font3Btn.textContent = "";
             }
         }
         
@@ -194,21 +203,34 @@ window.onload = ()=>{
     colorSwitcher = document.querySelector(".theme-selector");
     settingBtn.onclick = ()=>{
     colorSwitcher.classList.toggle('active');
-    
-
     colorButton = document.querySelectorAll(".theme-buttons");
     colorButton.forEach(color => {
         color.addEventListener('click',() => {
             let dataColor = color.getAttribute('data-color');
             let backgroundImage = color.getAttribute('data-background-image');
             let fontColor = color.getAttribute('data-font-color');
+            let isRandom = color.getAttribute('data-random');
+            if(isRandom == "yes"){
+                let bgImages = ["url('images/bg-4.jpg')","url('images/bg-5.jpg')","url('images/bg-6.jpg')"];
+                let bgcolors = ["76, 0, 39","27, 38, 44","0,0,0"];
+                let fntColor = ["152, 15, 90","187, 225, 250","255, 172, 65"];
+                let i = Math.floor(Math.random() * (3 - 0));
+                backgroundImage = bgImages[i];
+                dataColor = bgcolors[i];
+                fontColor = fntColor[i];
+            
+                
+            }
             document.querySelector(':root').style.setProperty('--main-color',dataColor);
             document.querySelector(':root').style.setProperty('--background-image',backgroundImage);
             document.querySelector(':root').style.setProperty('--font-color',fontColor);
             document.querySelector(".sample-header").classList.add("transition");
             colorSwitcher.classList.remove('active');
+            colorButton.forEach(color => {
+                color.classList.remove('active');
+            });
+            color.classList.add('active');
         });
-        
     });
 
     let fontSize = "";
