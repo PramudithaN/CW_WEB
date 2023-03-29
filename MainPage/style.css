@@ -326,6 +326,7 @@ footer {
     font-weight: 500;
     cursor: pointer;
     transition: 0.3s;
+    z-index: 1000;
 }
 
 #fixed-btn:hover {
