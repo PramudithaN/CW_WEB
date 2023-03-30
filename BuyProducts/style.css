@@ -349,7 +349,8 @@ background-color: rgba(255, 255, 255, 0.3);
       right: -10px;
       border: #ffffff;
       border-radius: 10px;
-      background-color: #008cff;
+      /* background-color: #008cff; */
+      background-color: rgba(255, 255, 255, 0.3);
       color: #fff;
       font-size: 1rem;
       font-weight: 500;
@@ -358,7 +359,7 @@ background-color: rgba(255, 255, 255, 0.3);
   }
   
   #fixed-btn:hover {
-    background: #0ccc2c;
+    background: #c90ccc;
     transform: translateY(3px);
     cursor: pointer;
   }
