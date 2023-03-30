@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap</title>
+    <style>
+        .main-text{
+            font-size: 25px;
+            fill: white;
+        }
+        .content-arc{
+            fill: none;
+            stroke: white;
+            stroke-width: 3px;
+        }
+        .main-line{
+            stroke-width: 4px;
+            stroke: white;
+        }
+        .arc{
+            fill: none;
+            stroke: white;
+            stroke-width: 2px;
+        }
+        .text{
+            fill: white;
+            font-size: 15px;
+        }
+        .circle{
+            fill: white;
+            stroke: none;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="./sitemap1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"></a>
+        <ul>
+          <li><a href="../MainPage/Home.html">Home</a></li>
+          <li ><a href="../Gallery/Gallery.html">Gallery</a></li>
+          <li><a href="../BuyProducts/Buy.html">Shop</a></li>
+          <li><a href="../Quiz/quiz.html">Quiz</a></li>
+          <li class="active"><a href="../Sitemap/Sitemap.html">Sitemap</a></li>
+          <li><a href="../Comments/Comment.html">Comments</a></li>
+          <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
+        </ul>
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+          $(document).on("click", "ul li", function () {
+            $(this).addClass("active").siblings().removeClass();
+          });
+        </script>
+    </header>
+    <div class="overlay"></div>
+    <div class="container">
+        <svg height="550" width="750" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+        
+        
+        <g class="content-arc">
+            <path d="M355,450 Q300,400 200,400" />
+        </g>
+
+
+        <g class="digital-art">
+            <path d="M200,400 Q180,460 130,495" class="arc"/>
+            <a href="../4ArtTypes/digitalart.html">
+                <text x="50" y="500" class="text">Digital Art</text>
+            </a>
+            <circle cx="30" cy="495" r="10" style="fill:#E80F88"/>
+        </g>
+
+        <g class="hand-drawn">
+            <path d="M200,400 Q170,400 145,415" class="arc"/>
+            <a href="../4ArtTypes/handdrawnart.html">
+                <text x="50" y="420" class="text">Handdrawn</text>
+                <text x="80" y="440" class="text">Art</text>
+            </a>
+            <circle cx="30" cy="415" r="10" style="fill:#C147E9"/>
+        </g>
+
+        <g class="AI-art">
+            <path d="M200,400 Q170,350 100,335" class="arc"/>
+            <a href="../4ArtTypes/aiart.html">
+                <text x="50" y="340" class="text">AI Art</text>
+            </a>
+            <circle cx="30" cy="335" r="10" style="fill:#4E9F3D"/>
+        </g>
+
+        <g class="Aesthetic-art">
+            <path d="M200,400 Q200,300 130,255" class="arc"/>
+            <a href="../4ArtTypes/aesthaticart.html">
+                <text x="50" y="260" class="text">Aesthetic</text>
+                <text x="70" y="280" class="text">Art</text>
+            </a>
+            <circle cx="30" cy="255" r="10" style="fill:#00A8CC"/>
+        </g>
+
+        <g class="gallery">
+            <path d="M355,360 Q420,300 540,295" class="arc"/>
+            <a href="../Gallery/Gallery.html">
+                <text x="550" y="300" class="text" style="font-size:18px;">Gallery</text>
+            </a>
+            <circle cx="630" cy="295" r="10" style="fill:#00A8CC"/>
+        </g>
+
+        <g class="shop">
+            <path d="M355,310 Q420,250 540,235" class="arc"/>
+            <a href="../BuyProducts/Buy.html">
+                <text x="550" y="240" class="text" style="font-size:18px;">Shop</text>
+            </a>
+            <circle cx="630" cy="235" r="10" style="fill:#E80F88"/>
+        </g>
+
+        <g class="quiz">
+            <path d="M355,250 Q420,200 540,175" class="arc"/>
+            <a href="../Quiz/quiz.html">
+                <text x="550" y="180" class="text" style="font-size:18px;">Quiz</text>
+            </a>
+            <circle cx="630" cy="175" r="10" style="fill:#4E9F3D"/>
+        </g>
+
+        <g class="comment">
+            <path d="M355,190 Q460,120 540,115" class="arc"/>
+            <a href="../Comments/Comment.html">
+                <text x="550" y="120" class="text" style="font-size:18px;">Comment</text>
+            </a>
+            <circle cx="660" cy="115" r="10" style="fill: #C147E9"/>
+        </g>
+
+        <g class="sitemap">
+            <path d="M355,250 Q320,150 130,175" class="arc"/>
+            <a href="../Sitemap/sitemap1.html">
+                <text x="50" y="180" class="text" style="font-size:18px;">Sitemap</text>
+            </a>
+            <circle cx="30" cy="175" r="10" style="fill:#00A8CC"/>
+        </g>
+
+        <g class="contact-us">
+            <path d="M355,150 Q300,100 140,115" class="arc"/>
+            <a href="../AboutUs/AboutUs.html" style="text-decoration: none;">
+                <text x="50" y="120" class="text" style="font-size:18px;">About Us</text>
+            </a>
+            <circle cx="30" cy="115" r="10" style="fill:#4E9F3D"/>
+        </g>
+
+        <g class="main-text">
+            <text x="320" y="520">Home</text>
+            <line x1="355" y1="500" x2="355" y2="450" class="main-line"/>
+            <line x1="355" y1="450" x2="355" y2="360" class="main-line"/>
+            <line x1="355" y1="360" x2="355" y2="310" class="main-line"/>
+            <line x1="355" y1="310" x2="355" y2="250" class="main-line"/>
+            <line x1="355" y1="250" x2="355" y2="190" class="main-line"/>
+            <line x1="355" y1="190" x2="355" y2="150" class="main-line"/>
+        </g>
+        <circle cx="200" cy="400" r="8" class = "circle"/>
+        <circle cx="355" cy="450" r="8" class = "circle"/>
+        <circle cx="355" cy="360" r="8" class = "circle"/>
+        <circle cx="355" cy="310" r="8" class = "circle"/>
+        <circle cx="355" cy="250" r="8" class = "circle"/>
+        <circle cx="355" cy="190" r="8" class = "circle"/>
+        <circle cx="355" cy="150" r="8" class = "circle"/>
+        
+        <g>
+            <text x="580" y="440" class="name" style="fill:#E80F88">Sewmie</text>
+            <circle cx="560" cy="435" r="10" style="fill:#E80F88"/>
+
+            <text x="580" y="470" class="name" style="fill:#C147E9">Pramuditha</text>
+            <circle cx="560" cy="465" r="10" style="fill:#C147E9"/>
+
+            <text x="580" y="500" class="name" style="fill:#4E9F3D">Kavindu</text>
+            <circle cx="560" cy="495" r="10" style="fill:#4E9F3D"/>
+
+            <text x="580" y="530" class="name" style="fill:#00A8CC">Madusara</text>
+            <circle cx="560" cy="525" r="10" style="fill:#00A8CC"/>
+        </g>
+        
+    
+        </svg>
+    </div>
+
+    <div class="text-container"> 
+        <h5 class="animate__animated animate__fadeInDown">Explore the site</h5>
+        <p class="animate__animated animate__fadeInUp">Welcome to our website sitemap! Here, you'll find a comprehensive list of all the pages on our website, 
+            organized in a clear and easy-to-navigate format. Whether you're new to our site or a regular visitor, 
+            our sitemap will help you quickly locate the information you're looking for. From our homepage to our 
+            product pages, Gallery, and more, our sitemap provides a bird's-eye view of our entire website. 
+            So if you're ready to explore all that our site has to offer, start browsing our sitemap now!</p>
+    </div>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
