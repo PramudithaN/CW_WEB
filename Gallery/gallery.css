@@ -3,7 +3,7 @@
 
 :root{
   --main-color : 10, 38, 71;
-  --background-image : url('images/bg-2.jpg');
+  --background-image : url('images/bg-2.png');
   --font-color : 44, 116, 179;
   --font-size : 15px;
   --h2-font-size: 25px;
@@ -556,7 +556,8 @@ h2 {
     right: -10px;
     border: #ffffff;
     border-radius: 10px;
-    background-color: #008cff;
+    /* background-color: #008cff; */
+    background-color: rgba(255, 255, 255, 0.3);
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
