@@ -211,6 +211,12 @@ header{
 .add-cart:hover{
     background: hsl(249,32%,17%);
 }
+.add-cart::before {
+    content: "+"; 
+    font-family: "Boxicons";
+    font-size: 20px;
+    margin-right:auto;
+} 
 @media (max-width: 1080px) {
     .nav{
         padding: 15px;

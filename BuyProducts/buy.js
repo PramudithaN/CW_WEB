@@ -84,7 +84,7 @@ var cartBoxContent = `
                            <img src="${productImg}" alt="" class="cart-img">
                             <div class="detail-box">
                                 <div class="cart-price">${price}</div>
-                                <<div class="cart-product-title"></div>
+                                <div class="cart-product-title"></div>
                                 <input type="number" value="1" class="cart-quantity">
                             </div>
                             <i class='bx bxs-trash cart-remove' ></i>`;
