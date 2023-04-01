@@ -158,7 +158,7 @@ display: none;
 
 
 #fixed-btn:hover {
-  background: #0ccc2c;
+  background: #760ccc;
   transform: translateY(3px);
   cursor: pointer;
 }

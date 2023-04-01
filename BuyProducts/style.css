@@ -363,3 +363,8 @@ background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(3px);
     cursor: pointer;
   }
+  .navbar{
+    /* background-color: rgba(74, 74, 74, 0.3); */
+    
+    /* background: #242424; */
+  }

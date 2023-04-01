@@ -13,6 +13,7 @@ body{
 }
 .about-left{
     background: #f26a8d;
+    /* background: #242424; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,6 +22,7 @@ body{
 }
 .about-left-content > div{
     background: #f49cbb;
+    /* background: #868686; */
     padding: 4rem 4rem 2.5rem 5rem;
     text-align: center;
 }
@@ -236,4 +238,10 @@ header {
   
   body::-webkit-scrollbar {
     display: none;
+  }
+
+  .navbar{
+    background-color: rgba(74, 74, 74, 0.3);
+    
+    /* background: #242424; */
   }

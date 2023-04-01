@@ -157,7 +157,7 @@ body::-webkit-scrollbar {
 
 
 #fixed-btn:hover {
-  background: #0ccc2c;
+  background: #ef1a65;
   transform: translateY(3px);
   cursor: pointer;
 }

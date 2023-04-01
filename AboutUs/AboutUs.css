@@ -135,6 +135,8 @@ header {
   font-size: 1.5em;
 }
 
+
+
 header .Logo {
   color: azure;
   font-weight: 700;
@@ -142,6 +144,7 @@ header .Logo {
   font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 2px;
+  
 }
 
 header ul {
@@ -206,5 +209,22 @@ body::-webkit-scrollbar {
 #fixed-btn:hover {
   background: #0ccc2c;
   transform: translateY(3px);
+  cursor: pointer;
+}
+
+.navbar{
+  /* background-color: rgba(74, 74, 74, 0.3); */
+
+  /* background: #242424; */
+}
+
+.navbar .a .logo{
+margin-left: -400px;
+  color: #fff;
+  background-color: #141414;
+  width: 100px;
+  height: 30px;
+  align-content: flex-end;
+  border-radius: 10px;
   cursor: pointer;
 }

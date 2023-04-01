@@ -331,7 +331,7 @@ footer {
 }
 
 #fixed-btn:hover {
-  background: #0ccc2c;
+  background: #03253f;
   transform: translateY(3px);
   cursor: pointer;
 }
