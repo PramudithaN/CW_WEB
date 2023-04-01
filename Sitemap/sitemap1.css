@@ -248,5 +248,28 @@
       transform: none;
     }
   }
-
+  #fixed-btn {
+    /* display: flex; */
+    width: 140px;
+    margin: 0.3rem auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 12px 20px;
+    position: fixed;
+    top: 150px;
+    right: -10px;
+    border: #ffffff;
+    border-radius: 10px;
+    /* background-color: #008cff; */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #fixed-btn:hover {
+    background: #0c89cc;
+    transform: translateY(3px);
+    cursor: pointer;
+  }
 
