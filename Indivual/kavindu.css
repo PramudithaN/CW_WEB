@@ -12,17 +12,16 @@ body{
     height: 100vh;
 }
 .about-left{
-    background: #f26a8d;
-    /* background: #242424; */
+    background: #0d2501;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 680px;
     justify-content: center;
     height: 100vh;
 }
 .about-left-content > div{
-    background: #f49cbb;
-    /* background: #868686; */
+    background: #3a644b;
     padding: 4rem 4rem 2.5rem 5rem;
     text-align: center;
 }
@@ -84,31 +83,7 @@ body{
     letter-spacing: 5px;
     margin-top: 1.2rem;
 }
-.icons{
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    padding: 0.8rem 0;
-}
-.icons li{
-    list-style-type: none;
-    background: #f36a8d;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    margin: 0 0.5rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-}
-.icons li:hover{
-    background: #edffec;
-    color: #000;
-}
+
 .about-right{
     background: #fff;
     height: 100vh;
@@ -124,7 +99,7 @@ body{
     text-transform: uppercase;
 }
 .about-right h1 span{
-    color: #dd2d4a;
+    color: #008a55;
 }
 .about-right h2{
     font-weight: 600;
@@ -146,23 +121,13 @@ body{
     margin: 0 0.5rem;
     cursor: pointer;
 }
-.btn.btn-pink{
-    background: #dd2d4a;
-    color: #fff;
-    border-color: #dd2d4a;
-    transition: all 0.5s ease-in-out;
-}
-.btn.btn-pink:hover{
-    background: transparent;
-    border-color: #dd2d4a;
-    color: #000;
-}
+
 .btn.btn-white{
     transition: all 0.5s ease-in-out;
 }
 .btn.btn-white:hover{
-    background: #dd2d4a;
-    border-color: #dd2d4a;
+    background: #413739;
+    border-color: #000000;
     color: #fff;
 }
 .about-para p{

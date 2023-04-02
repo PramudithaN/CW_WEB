@@ -374,3 +374,31 @@ background-color: rgba(255, 255, 255, 0.3);
     
     /* background: #242424; */
   }
+
+
+  /* .remove-button {
+    background-color: rgb(167, 0, 0);
+    border: none;
+    color: white;
+    margin-left: 900px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  } */
+
+  .cart-remove {
+    background-color: red;
+    color: white;
+    background-image: url(istockphoto-1410274301-170x170.jpg);
+    background-size: contain;
+    padding: 20px 10px;
+    /* width: 50px; */
+    margin-right: 90px;
+    margin-left: 60px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  

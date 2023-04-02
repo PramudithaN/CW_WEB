@@ -110,3 +110,51 @@ function updateTotal(){
 
         document.getElementsByClassName('total-price')[0].innerText = '$' + total;
 }
+
+// function ready() {
+//     // ... existing code ...
+  
+//     var removeCartButtons = document.getElementsByClassName('cart-remove');
+//     for (var i = 0; i < removeCartButtons.length; i++) {
+//       var button = removeCartButtons[i];
+//       button.addEventListener('click', removeCartItem);
+//     }
+//   }
+  
+//   function removeCartItem(event) {
+//     var buttonClicked = event.target;
+//     buttonClicked.parentElement.remove();
+//     updateCartTotal();
+//   }
+
+
+
+  // Select the remove button for each cart item
+const removeCartItemButtons = document.getElementsByClassName('cart-remove');
+
+// Add an event listener to the remove button
+for (let i = 0; i < removeCartItemButtons.length; i++) {
+  const button = removeCartItemButtons[i];
+  button.addEventListener('click', function(event) {
+    const cartItem = event.target.parentElement;
+    cartItem.remove();
+    updateCartTotal();
+  });
+}
+
+// Function to update the total price in the cart
+function updateCartTotal() {
+  const cartItems = document.getElementsByClassName('cart-item');
+  let total = 0;
+  for (let i = 0; i < cartItems.length; i++) {
+    const cartItem = cartItems[i];
+    const priceElement = cartItem.getElementsByClassName('cart-item-price')[0];
+    const price = parseFloat(priceElement.innerText.replace('$', ''));
+    const quantityElement = cartItem.getElementsByClassName('cart-item-quantity')[0];
+    const quantity = quantityElement.querySelector('input[type="number"]').value;
+    total += price * quantity;
+  }
+  document.getElementsByClassName('total-price')[0].innerText = '$' + total.toFixed(2);
+}
+
+
