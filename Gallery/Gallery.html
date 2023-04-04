@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="gallery.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
 <body>
-    <header>
-        <a href="#" class="logo"></a>
+
+    <header class="navbar">
+        <a href="../MainPage/Home.html">
+            <button class="logo"></button>
+        </a>
         <ul>
-          <li><a href="../MainPage/Home.html">Home</a></li>
-          <li class="active"><a href="../Gallery/Gallery.html">Gallery</a></li>
-          <li><a href="../BuyProducts/Buy.html">Shop</a></li>
-          <li><a href="../Quiz/quiz.html">Quiz</a></li>
-          <li><a href="../Sitemap/Sitemap1.html">Sitemap</a></li>
-          <li><a href="../Comments/Comment.html">Comments</a></li>
-          <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
+            <li><a href="../MainPage/Home.html">Home</a></li>
+            <li class="active"><a href="../Gallery/Gallery.html">Gallery</a></li>
+            <li><a href="../BuyProducts/Buy.html">Shop</a></li>
+            <li><a href="../Quiz/quiz.html">Quiz</a></li>
+            <li><a href="../Sitemap/Sitemap1.html">Sitemap</a></li>
+            <li><a href="../Comments/Comment.html">Comments</a></li>
+            <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
         </ul>
-    
+
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script type="text/javascript">
-          $(document).on("click", "ul li", function () {
-            $(this).addClass("active").siblings().removeClass();
-          });
+            $(document).on("click", "ul li", function () {
+                $(this).addClass("active").siblings().removeClass();
+            });
         </script>
     </header>
     <div class="sample-header">
@@ -45,14 +50,14 @@
                             <figcaption class="gallery__caption">Digital Eye</figcaption>
                         </figure>
                     </div>
-            
+
                     <div class="gallery__link">
                         <figure class="gallery__thumb">
                             <img src="images/2.jpg" alt="Portrait by Oladimeji Odunsi" class="gallery__image">
                             <figcaption class="gallery__caption">Robot</figcaption>
                         </figure>
                     </div>
-            
+
                     <div class="gallery__link">
                         <figure class="gallery__thumb">
                             <img src="images/17.jpg" alt="Portrait by Alex Perez" class="gallery__image">
@@ -60,7 +65,7 @@
                         </figure>
                     </div>
                 </div>
-                
+
                 <div class="gallery__column">
                     <div class="gallery__link">
                         <figure class="gallery__thumb">
@@ -68,14 +73,14 @@
                             <figcaption class="gallery__caption">Captain Eagle</figcaption>
                         </figure>
                     </div>
-                    
+
                     <div class="gallery__link">
                         <figure class="gallery__thumb">
                             <img src="images/8.jpg" alt="Portrait by Ivana Cajina" class="gallery__image">
                             <figcaption class="gallery__caption">Liquid Metal</figcaption>
                         </figure>
                     </div>
-            
+
                     <div class="gallery__link">
                         <figure class="gallery__thumb">
                             <img src="images/9.jpg" alt="Portrait by Sam Burriss" class="gallery__image">
@@ -83,7 +88,7 @@
                         </figure>
                     </div>
                 </div>
-                
+
                 <div class="gallery__column">
                     <div class="gallery__link">
                         <figure class="gallery__thumb">
@@ -91,14 +96,14 @@
                             <figcaption class="gallery__caption">Dreaming Girl</figcaption>
                         </figure>
                     </div>
-                    
+
                     <div class="gallery__link">
                         <figure class="gallery__thumb">
                             <img src="images/11.jpg" alt="Portrait by Ethan Haddox" class="gallery__image">
                             <figcaption class="gallery__caption">Calm Girl</figcaption>
                         </figure>
                     </div>
-            
+
                     <div class="gallery__link">
                         <figure class="gallery__thumb">
                             <img src="images/12.jpg" alt="Portrait by Amir Geshani" class="gallery__image">
@@ -106,7 +111,7 @@
                         </figure>
                     </div>
                 </div>
-                
+
                 <div class="gallery__column">
                     <div class="gallery__link">
                         <figure class="gallery__thumb">
@@ -114,14 +119,14 @@
                             <figcaption class="gallery__caption">Stylish Clemenza</figcaption>
                         </figure>
                     </div>
-            
+
                     <div class="gallery__link">
                         <figure class="gallery__thumb">
                             <img src="images/14.jpg" alt="Portrait by Jasmin Chew" class="gallery__image">
                             <figcaption class="gallery__caption">Thoughtful Lovina Portrait</figcaption>
                         </figure>
                     </div>
-                    
+
                     <div class="gallery__link">
                         <figure class="gallery__thumb">
                             <img src="images/16.jpg" alt="Portrait by Dima DallAcqua" class="gallery__image">
@@ -134,77 +139,85 @@
     </div>
     <script type="text/javascript">
         function parallax_height() {
-        var scroll_top = $(this).scrollTop();
-        var sample_section_top = $(".sample-section").offset().top;
-        var header_height = $(".sample-header-section").outerHeight();
-        $(".sample-section").css({ "margin-top": header_height });
-        $(".sample-header").css({ height: header_height - scroll_top });
+            var scroll_top = $(this).scrollTop();
+            var sample_section_top = $(".sample-section").offset().top;
+            var header_height = $(".sample-header-section").outerHeight();
+            $(".sample-section").css({ "margin-top": header_height });
+            $(".sample-header").css({ height: header_height - scroll_top });
         }
         parallax_height();
-        $(window).scroll(function() {
-        parallax_height();
+        $(window).scroll(function () {
+            parallax_height();
         });
-        $(window).resize(function() {
-        parallax_height();
+        $(window).resize(function () {
+            parallax_height();
         });
     </script>
     <div class="preview-box">
         <div class="details">
-          <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
-          <span class="icon fas fa-times"></span>
+            <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+            <span class="icon fas fa-times"></span>
         </div>
         <div class="image-box">
-          <img src="" alt="">
-          <div class="description-box">
-            <h2 class="dsc_tittle">Digital eye</h2>
-            <p class="description"></p>
-          </div> 
-          <div class="slide prev"><i class="fas fa-angle-left"></i></div>
-          <div class="slide next"><i class="fas fa-angle-right"></i></div> 
+            <img src="" alt="">
+            <div class="description-box">
+                <h2 class="dsc_tittle">Digital eye</h2>
+                <p class="description"></p>
+            </div>
+            <div class="slide prev"><i class="fas fa-angle-left"></i></div>
+            <div class="slide next"><i class="fas fa-angle-right"></i></div>
         </div>
 
-        
-      </div>
-      <div class="shadow"></div>
-      <script src="script.js"></script>
+
+    </div>
+    <div class="shadow"></div>
+    <script src="script.js"></script>
 
     </div>
 
-    <div class = "theme-selector">
+    <div class="theme-selector">
         <div class="switcher-btn">
             <i class="fas fa-cog"></i>
         </div>
         <h3>select theme</h3>
         <div class="theme-button-container">
-            <span class="theme-buttons active" data-color="22, 33, 62" data-random = "no" data-background-image="url('images/bg-2.png')" data-font-color = "44, 116, 179" style="background:rgb(22, 33, 62);"></span>
-            <span class="theme-buttons" data-color="45, 3, 59" data-random = "no" data-background-image="url('images/bg-1.png')" data-font-color = "193, 71, 233" style="background: rgb(45, 3, 59);" ></span>
-            <span class="theme-buttons" data-color="0, 0, 0" data-random = "no" data-background-image="url('images/bg-3.png')" data-font-color = "91, 143, 185" style="background: rgb(0, 0, 0);"></span>
-            <span class="theme-buttons" data-color="45, 3, 59" data-random = "yes" style="background-image: url('images/icn3.png');"></span>
+            <span class="theme-buttons active" data-color="22, 33, 62" data-random="no"
+                data-background-image="url('images/bg-2.png')" data-font-color="44, 116, 179"
+                style="background:rgb(22, 33, 62);"></span>
+            <span class="theme-buttons" data-color="45, 3, 59" data-random="no"
+                data-background-image="url('images/bg-1.png')" data-font-color="193, 71, 233"
+                style="background: rgb(45, 3, 59);"></span>
+            <span class="theme-buttons" data-color="0, 0, 0" data-random="no"
+                data-background-image="url('images/bg-3.png')" data-font-color="91, 143, 185"
+                style="background: rgb(0, 0, 0);"></span>
+            <span class="theme-buttons" data-color="45, 3, 59" data-random="yes"
+                style="background-image: url('images/icn3.png');"></span>
         </div>
         <div class="font-container">
-            <span class="font-1" data-font-size = "12px" data-h2-font-size = "20px"></span>
-            <span class="font-2" data-font-size = "14px" data-h2-font-size = "25px"></span>
-            <span class="font-3" data-font-size = "15px" data-h2-font-size = "28px"></span>
+            <span class="font-1" data-font-size="12px" data-h2-font-size="20px"></span>
+            <span class="font-2" data-font-size="14px" data-h2-font-size="25px"></span>
+            <span class="font-3" data-font-size="15px" data-h2-font-size="28px"></span>
         </div>
     </div>
 
 
 
 
-<div class="scrollTop" onclick="scrollToTop();"></div>
-  <script type="text/javascript">
-    window.addEventListener("scroll", function () {
-      var scroll = document.querySelector(".scrollTop");
-      scroll.classList.toggle("active", window.scrollY > 500);
-    });
+    <div class="scrollTop" onclick="scrollToTop();"></div>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var scroll = document.querySelector(".scrollTop");
+            scroll.classList.toggle("active", window.scrollY > 500);
+        });
 
-    function scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
-  </script>
-<a href="../Indivual/Madusara.html"> <button id="fixed-btn">Madusara</button> </a>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }
+    </script>
+    <a href="../Indivual/Madusara.html"> <button id="fixed-btn">Madusara</button> </a>
 </body>
+
 </html>

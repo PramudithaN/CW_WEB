@@ -153,7 +153,7 @@ header{
     transition: 0.3s;
 }
 .btn-buy:hover{
-    background: #0ccc2c;
+    background: #68164d;
     
   transform: translateY(px);
     
@@ -374,6 +374,21 @@ background-color: rgba(255, 255, 255, 0.3);
     
     /* background: #242424; */
   }
+  
+  .logo{
+    margin-left: 0px;
+      /* color: #000000; */
+      /* background-color: #000000; */
+      border: 0px;
+      background-color: rgba(23, 23, 23, 0.3);
+      background-image: url(logo.png);
+      background-size: cover;
+      width: 60px;
+      height: 60px;
+      align-content: flex-end;
+      border-radius: 20px;
+      cursor: pointer;
+    }
 
 
   /* .remove-button {

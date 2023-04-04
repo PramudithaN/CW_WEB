@@ -218,13 +218,17 @@ body::-webkit-scrollbar {
   /* background: #242424; */
 }
 
-.navbar .a .logo{
-margin-left: -400px;
-  color: #fff;
-  background-color: #141414;
-  width: 100px;
-  height: 30px;
+.logo{
+margin-left: 0px;
+  /* color: #000000; */
+  /* background-color: #000000; */
+  border: 0px;
+  background-color: rgba(23, 23, 23, 0.3);
+  background-image: url(logo.png);
+  background-size: cover;
+  width: 60px;
+  height: 60px;
   align-content: flex-end;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
 }
