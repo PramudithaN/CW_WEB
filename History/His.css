@@ -32,6 +32,7 @@ body {
 
 .hero-section {
   align-items: flex-start;
+  background-image: url(hd-wallpaper-6047465_1920.png);
   background-color: #141414;;
   display: flex;
   min-height: 100%;
@@ -334,3 +335,16 @@ transform: translateY(px);
   background: #68164d;
 transform: translateY(px);
 }
+
+.logo{
+  margin-left: 0px;
+    border: 0px;
+    background-color: rgba(23, 23, 23, 0.3);
+    background-image: url(logo.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    align-content: flex-end;
+    border-radius: 20px;
+    cursor: pointer;
+  }
