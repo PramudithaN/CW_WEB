@@ -10,24 +10,22 @@
 </head>
 
 
-    <header class="navbar">
-       <header class="navbar">
-        <a href="../MainPage/Home.html">
-            <button class="logo"></button>
-        </a>
-        <ul>
-            <li><a href="../MainPage/Home.html">Home</a></li>
-            <li><a href="../BuyProducts/Buy.html">Shop</a></li>
-            <li class="active"><a href="../Payment/pay.html">Payment</a></li>
-        </ul>
-
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script type="text/javascript">
-            $(document).on("click", "ul li", function () {
-                $(this).addClass("active").siblings().removeClass();
-            });
-        </script>
-    </header>
+<header class="navbar">
+    <a href="../MainPage/Home.html">
+        <button class="logo"></button>
+    </a>
+    <ul>
+        <li><a href="../MainPage/Home.html">Home</a></li>
+        <li><a href="../BuyProducts/Buy.html">Shop</a></li>
+        <li class="active"><a href="../Payment/pay.html">Payment</a></li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).on("click", "ul li", function () {
+            $(this).addClass("active").siblings().removeClass();
+        });
+    </script>
+</header>
 
     <body>
 
@@ -121,6 +119,20 @@
         <a href="../Indivual/Sewmie.html">
             <button id="fixed-btn">Sewmini</button>
         </a>
+
+
+        <div id="dialog-box">
+            <p>Thank you for your purchase!</p>
+            <button id="close-dialog-button">Okay</button>
+        </div>
+        <script>
+            $(document).ready(function() {
+              $("#close-dialog-button").click(function() {
+                $("#dialog-box").hide();
+              });
+            });
+            </script>
+        
 
 
 
