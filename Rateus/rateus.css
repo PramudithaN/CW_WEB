@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +11,13 @@ html,body{
     height: 100%;
     place-items: center;
     text-align: center;
-    background: #000;
+    background: #03000e;
 
 }
 
 .container {
+    margin-top: 100px;
     position: relative;
-    /* margin-left: 200px; */
-    /* margin-top: 500px; */
     width: 400px;
     background: #111;
     padding: 20px 30px;
@@ -27,6 +27,7 @@ html,body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 300px;
 }
 
 .container .post {
@@ -40,17 +41,18 @@ html,body{
 }
 
 .container .edit {
-    position: absolute;
+    position: relative;
     right: 10px;
     top: 5px;
     cursor: pointer;
-    font-size: 16px;
-    color: #666;
+    font-size: 26px;
+    color: #ffffff;
     font-weight: 500;
+    transition: 0.3s;
 }
 
 .container .edit:hover {
-    text-decoration: underline;
+    transform: translateY(3px);
 }
 
 .container .star-widget input {
@@ -65,41 +67,58 @@ html,body{
     float: right;
     transition: all 0.2s ease;
 }
+/* ____________________________________________________ */
 
 input:not(:checked) ~ label:hover,
+
 input:not(:checked) ~ label:hover ~ label {
+    content: "\f005";
+    font-family: fontAwesome;
+    background-size: 1px;
     color: #fd4;
 }
 
 input:checked ~ label {
+    content: "\f005";
+    font-family: fontAwesome;
     color: #fe7;
 }
 
 input#rate-5:checked ~ label {
+    content: "\f005";
     color: #fe7;
+    font-family: fontAwesome;
     text-shadow: 0 0 20px #952;
 }
 
-
+/* ____________________________________________________________ */
 
 #rate-1:checked~form header:before {
-    content: "I just hate it";
+     
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    content: "I just hate it :(";
 }
 
 #rate-2:checked~form header:before {
-    content: "I don't like it";
+ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    content: "I don't like it :/";
 }
 
 #rate-3:checked~form header:before {
-    content: "I just like it";
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    content: "I just like it :|";
 }
 
 #rate-4:checked~form header:before {
-    content: "It is awesome";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    content: "It is awesome :)";
 }
 
 #rate-5:checked~form header:before {
-    content: "I just love it";
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    content: "I just love it ;)";
 }
 
 
@@ -164,4 +183,26 @@ form .btn button {
 
 form .btn button:hover {
     background: #1b1b1b;
+}
+
+#fixed-btn {
+    margin: 0.3rem auto 0 auto;
+    padding: 12px 20px;
+    position: fixed;
+    top: 150px;
+    right: -10px;
+    border: #ffffff;
+    border-radius: 10px;
+    background-color: rgba(78, 78, 78, 0.1);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#fixed-btn:hover {
+  background: #ccb60c;
+  transform: translateY(3px);
+  cursor: pointer;
 }
