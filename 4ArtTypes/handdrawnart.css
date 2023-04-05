@@ -18,9 +18,6 @@
 }
 
 .row {
-  /* padding: 100px;
-  padding-left: 100px;
-  padding-right: 90px; */
   display: flex;
   height: 88%;
   align-items: center;
