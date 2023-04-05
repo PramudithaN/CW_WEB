@@ -21,6 +21,7 @@
 
 .container form{
   margin-left: 10px;
+  margin-bottom: -75px;
   padding:20px;
   width:700px;
   background: #fff;
@@ -104,6 +105,7 @@
   /* border: .5px solid #ccc; */
   padding: 10px;
   margin-right: -500px;
+  margin-bottom: -50px;
   border-radius: 10px;
   padding-left: 150px;
   margin-left: 20px;
@@ -119,11 +121,12 @@
   width: 400px;
   height: 550px;
   margin-top: 70px;
+  margin-bottom: -50px;
   /* border: .5px solid #ccc; */
   border-radius: 10px;
   /* padding: 10px; */
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 30px;
   margin-left: 100px;
   font-size: 16px;
   line-height: 1.5;
@@ -246,4 +249,49 @@ margin-left: 0px;
   align-content: flex-end;
   border-radius: 20px;
   cursor: pointer;
+}
+#dialog-box {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  width: 30%;
+  height: 30%;
+  text-align: center;
+  overflow: auto;
+  background-color: rgb(253, 253, 253);
+}
+
+#dialog-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  width: 80%;
+  max-width: 600px;
+}
+
+#close-dialog-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f7f3f3;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+  width: 140px;
+  margin: 0.3rem auto 0 auto;
+  background-color: #008cff;
+  padding: 12px 20px;
+  /* border: #4442be; */
+  border-radius: 10px;
+  /* cursor: pointer;
+  transition: 0.3s; */
+}
+
+#close-dialog-button:hover{
+  background: #23c93f;
+transform: translateY(px);
 }
