@@ -152,6 +152,7 @@ header ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
 }
 
 header ul li {
@@ -188,33 +189,8 @@ body::-webkit-scrollbar {
   color: #fff;
 }
 
-#fixed-btn {
-  width: 140px;
-  height: 50px;
-    margin: 0.3rem auto 0 auto;
-    padding: 12px 20px;
-    position: fixed;
-    top: 150px;
-    right: -10px;
-    border: #ffffff;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-#fixed-btn:hover {
-  background: #0ccc2c;
-  transform: translateY(3px);
-  cursor: pointer;
-}
-
 .logo{
-margin-left: 0px;
+  margin-left: 0px;
   border: 0px;
   background-color: rgba(23, 23, 23, 0.3);
   background-image: url(logo.png);
@@ -346,5 +322,27 @@ transform: translateY(px);
     height: 60px;
     align-content: flex-end;
     border-radius: 20px;
+    cursor: pointer;
+  }
+  #fixed-btn1 {
+    width: 140px;
+    margin: 0.3rem auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 12px 20px;
+    position: fixed;
+    top: 150px;
+    right: -10px;
+    border: #ffffff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #fixed-btn1:hover {
+    background: #0c59cc;
+    transform: translateY(3px);
     cursor: pointer;
   }
