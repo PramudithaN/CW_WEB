@@ -26,13 +26,19 @@ button {
   cursor: pointer;
 }
 
-#start-button,
 #restart {
-  
-  border-radius: 50px;
   font-size: 1.3em;
   padding: 0.5em 1.8em;
   border-radius: 0.2em;
+}
+
+#start-button{
+  font-size: 1.3em;
+  padding: 0.5em 1.8em;
+  border-radius: 0.2em;
+  position: absolute;
+  top: 243px;
+  right: 244px;
 }
 
 #start-button:hover {
@@ -196,7 +202,6 @@ body::-webkit-scrollbar {
 }
 
 #fixed-btn {
-  /* display: flex; */
   width: 140px;
   margin: 0.3rem auto 0 auto;
   background-color: rgba(255, 255, 255, 0.3);
@@ -206,29 +211,19 @@ body::-webkit-scrollbar {
   right: -10px;
   border: #ffffff;
   border-radius: 10px;
-  /* background-color: #008cff; */
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
 }
-
 #fixed-btn:hover {
   background: #0c89cc;
   transform: translateY(3px);
   cursor: pointer;
 }
-.navbar{
-  /* background-color: rgba(74, 74, 74, 0.3); */
-
-  /* background: #242424; */
-}
-
 .logo{
 margin-left: 0px;
-  /* color: #000000; */
-  /* background-color: #000000; */
   border: 0px;
   background-color: rgba(23, 23, 23, 0.3);
   background-image: url(logo.png);
@@ -238,4 +233,18 @@ margin-left: 0px;
   align-content: flex-end;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.start-box {
+  border-radius: 50px;
+  background-color: #ffffff;
+  padding: 3.1em 1.8em;
+  width: 80%;
+  max-width: 37.5em;
+  margin: 0 auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 0.6em;
 }

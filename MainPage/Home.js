@@ -7,6 +7,5 @@ let timer = setInterval(()=>{
 
         clearInterval(timer);
         window.location.href = "../MainPage/Home.html";
-        // href="../MainPage/Home.html";
     }
     },1000);
