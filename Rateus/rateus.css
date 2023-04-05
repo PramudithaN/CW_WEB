@@ -49,10 +49,12 @@ html,body{
     color: #ffffff;
     font-weight: 500;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .container .edit:hover {
     transform: translateY(3px);
+    text-decoration: none;
 }
 
 .container .star-widget input {
@@ -190,10 +192,10 @@ form .btn button:hover {
     padding: 12px 20px;
     position: fixed;
     top: 150px;
-    right: -10px;
+    left: 1410px;
     border: #ffffff;
     border-radius: 10px;
-    background-color: rgba(78, 78, 78, 0.1);
+    background-color: rgba(78, 78, 78, 0.5);
     color: #fff;
     font-size: 1rem;
     font-weight: 500;

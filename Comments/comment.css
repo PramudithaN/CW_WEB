@@ -132,7 +132,7 @@ body::-webkit-scrollbar {
     padding: 12px 20px;
     position: fixed;
     top: 150px;
-    right: -10px;
+    left: 1410px;
     border: #ffffff;
     border-radius: 10px;
     background-color: rgba(78, 78, 78, 0.1);
@@ -153,9 +153,7 @@ body::-webkit-scrollbar {
   margin-top: -300px;
   margin-right: 200px;
   padding: 12px 20px;
-  /* position: fixed; */
   top: 250px;
-  right: -10px;
   border: #ffffff;
   border-radius: 60px;
   background-color: rgba(42, 133, 212, 0.5);
@@ -164,7 +162,6 @@ body::-webkit-scrollbar {
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
-  text-decoration: none;
 }
 
 #fixed-btn1:hover {
@@ -172,8 +169,8 @@ body::-webkit-scrollbar {
   background: #bfcc0c;
   transform: translateY(3px);
   cursor: pointer;
-  text-decoration: none;
 }
+
 
 
 .logo{
