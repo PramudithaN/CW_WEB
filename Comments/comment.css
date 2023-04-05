@@ -150,19 +150,29 @@ body::-webkit-scrollbar {
 }
 
 #fixed-btn1 {
-  margin: 0.3rem auto 0 auto;
+  margin-top: -300px;
+  margin-right: 200px;
   padding: 12px 20px;
-  position: fixed;
+  /* position: fixed; */
   top: 250px;
   right: -10px;
   border: #ffffff;
-  border-radius: 10px;
-  background-color: rgba(78, 78, 78, 0.1);
+  border-radius: 60px;
+  background-color: rgba(42, 133, 212, 0.5);
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
+}
+
+#fixed-btn1:hover {
+  color: black;
+  background: #bfcc0c;
+  transform: translateY(3px);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 
