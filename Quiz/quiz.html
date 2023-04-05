@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="quiz.css" />
-  </head>
-  <body>
-    
-      <header class="navbar">
-        <a href="../MainPage/Home.html"> 
-          <button class="logo"></button>
-        </a>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a href="../MainPage/Home.html">
+      <button class="logo"></button>
+    </a>
+    <ul>
+      <li><a href="../MainPage/Home.html">Home</a></li>
+      <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+      <li><a href="../BuyProducts/Buy.html">Shop</a></li>
+      <li class="active"><a href="../Quiz/quiz.html">Quiz</a></li>
+      <li><a href="../Sitemap/sitemap1.html">Sitemap</a></li>
+      <li><a href="../Comments/Comment.html">Comments</a></li>
+      <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
+    </ul>
+  </header>
+  <div class="start-screen">
+    <div class="start-box">
       <ul>
-        <li><a href="../MainPage/Home.html">Home</a></li>
-        <li><a href="../Gallery/Gallery.html">Gallery</a></li>
-        <li><a href="../BuyProducts/Buy.html">Shop</a></li>
-        <li class="active"><a href="../Quiz/quiz.html">Quiz</a></li>
-        <li><a href="../Sitemap/sitemap1.html">Sitemap</a></li>
-        <li><a href="../Comments/Comment.html">Comments</a></li>
-        <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
-      </ul>
-    </header>
-    <div class="start-screen">
-      <div class="start-box">
-      <ul>
-      <li>You cant exit quiz once you start.</li>
-         <li>You have 5 questions and have 6s to answer the each question.</li>
+        <h2>Rules You must follow</h2><br>
+        <li>You cant exit quiz once you start.</li>
+        <li>You have 5 questions and have 6s to answer the each question.</li>
         <li>If you don't answer within time, next question will automatically Appear and you can't go back.</li>
-         <li>You'll get points on the basis of your correct answers.</li>
-         </ul>
-      <button id="start-button">Start</button>
+        <li>You'll get points on the basis of your correct answers.</li>
+      </ul>
+     
     </div>
-    </div>
-    <div id="display-container">
-      <div class="header">
-        <div class="number-of-count">
-          <span class="number-of-question">1 of 5 questions</span>
-        </div>
-        <div class="timer-div">
-          <img src="53353.png" width="25px" height="25px" />
-          <span class="time-left">10s</span>
-        </div>
+    <button id="start-button">Start</button>
+  </div>
+  <div id="display-container">
+    <div class="header">
+      <div class="number-of-count">
+        <span class="number-of-question">1 of 5 questions</span>
       </div>
-      <div id="container">
+      <div class="timer-div">
+        <img src="53353.png" width="25px" height="25px" />
+        <span class="time-left">10s</span>
       </div>
-      <button id="next-button">Next</button>
     </div>
-    <div class="score-container hide">
-      <div id="user-score">Demo Score</div>
-      <button id="restart">Restart</button>
+    <div id="container">
     </div>
+    <button id="next-button">Next</button>
+  </div>
+  <div class="score-container hide">
+    <div id="user-score">Demo Score</div>
+    <button id="restart">Restart</button>
+  </div>
   </div>
   <div class="score-container hide">
     <div id="user-score">Demo Score</div> <button id="restart">Restart</button>
@@ -70,9 +71,9 @@
       z-index: -1;
     }
   </style>
-  <script src="quiz.js"></script> 
-  <a href="../Indivual/kavindu.html"> 
-    <button id="fixed-btn">kavindu</button> 
+  <script src="quiz.js"></script>
+  <a href="../Indivual/kavindu.html">
+    <button id="fixed-btn">kavindu</button>
   </a>
 </body>
 

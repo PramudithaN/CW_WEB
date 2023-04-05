@@ -1,9 +1,9 @@
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-font-family: "Poppins",
-sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",
+    sans-serif;
 }
 
 .start-screen,
@@ -19,7 +19,7 @@ sans-serif;
 }
 
 button {
-  
+
   border-radius: 50px;
   border: none;
   outline: none;
@@ -27,27 +27,30 @@ button {
 }
 
 #restart {
+
+  border-radius:30px;
   font-size: 1.3em;
   padding: 0.5em 1.8em;
-  border-radius: 0.2em;
+ 
 }
 
 #start-button{
   font-size: 1.3em;
   padding: 0.5em 1.8em;
-  border-radius: 0.2em;
-  position: absolute;
-  top: 243px;
+  border-radius:30px;
+  position: relative;
+  top: 150px;
   right: 244px;
+  margin-left: 500px;
 }
 
 #start-button:hover {
-  background-color: #0aed21;
+  background-color: #0ac0ed;
   color: #333;
 }
 
 #restart:hover {
-  background-color: #0aed21;
+  background-color: #0ac0ed;
   color: #333;
 }
 
@@ -56,7 +59,7 @@ button {
 }
 
 #display-container {
-  
+
   border-radius: 50px;
   background-color: #ffffff;
   padding: 3.1em 1.8em;
@@ -237,14 +240,19 @@ margin-left: 0px;
 
 .start-box {
   border-radius: 50px;
-  background-color: #ffffff;
-  padding: 3.1em 1.8em;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 3.1em 5em;
   width: 80%;
   max-width: 37.5em;
-  margin: 0 auto;
+  margin-top: 20px;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  border-radius: 0.6em;
+  top: 300px;
+  left: 750px;
+  border-radius: 20px;
+}
+.start-box h2 {
+  padding-left: 50px;
+  font-size: 30px;
+  color: #000000;
 }
