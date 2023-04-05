@@ -9,9 +9,6 @@
 .bg {
   width: 1600px;
   height: 800px;
-  /* object-fit: cover; */
-  /* background-position: absolute; */
-  /* box-sizing: border-box; */
   background-size: auto;
   background-image: url(background.png);
 }
@@ -26,7 +23,6 @@
   right: -10px;
   border: #ffffff;
   border-radius: 10px;
-  /* background-color: #008cff; */
   background-color: rgba(255, 255, 255, 0.3);
   color: #fff;
   font-size: 1rem;
