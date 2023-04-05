@@ -150,13 +150,14 @@ body::-webkit-scrollbar {
 }
 
 #fixed-btn1 {
-  margin-top: -300px;
-  margin-right: 200px;
-  padding: 12px 20px;
+  margin-top: -350px;
+  margin-right: 150px;
+  padding-left:70px;
   top: 250px;
+  width: 200px;
   border: #ffffff;
   border-radius: 60px;
-  background-color: rgba(42, 133, 212, 0.5);
+  background-color: rgba(245, 187, 39, 0.8);
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
@@ -166,7 +167,7 @@ body::-webkit-scrollbar {
 
 #fixed-btn1:hover {
   color: black;
-  background: #bfcc0c;
+  background: #cc620c;
   transform: translateY(3px);
   cursor: pointer;
 }

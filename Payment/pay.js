@@ -40,13 +40,3 @@ form.addEventListener('submit', (event) => {
   form.reset();
 });
 
-$(document).ready(function() {
-  $("#close-dialog-button").click(function() {
-      $("#dialog-box").hide();
-      $("body").removeClass("blur");
-  });
-  $(".submit-btn").click(function() {
-      $("#dialog-box").show();
-      $("body").addClass("blur");
-  });
-});
