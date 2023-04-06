@@ -132,7 +132,7 @@ body::-webkit-scrollbar {
     padding: 12px 20px;
     position: fixed;
     top: 150px;
-    left: 1410px;
+    right: -10px;
     border: #ffffff;
     border-radius: 10px;
     background-color: rgba(78, 78, 78, 0.1);
