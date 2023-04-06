@@ -42,15 +42,6 @@
     font-size: 1.2rem;
   }
   
-  /* header .Logo {
-    color: azure;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  } */
-  
   header ul {
     display: flex;
     justify-content: center;
@@ -89,10 +80,16 @@
   }
   
   .logo{
-    position: relative;
-    display: inline-block;
-    bottom: -20px;
-    opacity: 0;
+    margin-left: 0px;
+    border: 0px;
+    background-color: rgba(23, 23, 23, 0.3);
+    background-image: url(logo.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    align-content: flex-end;
+    border-radius: 20px;
+    cursor: pointer;
   }
   
   .logo.active{
@@ -278,17 +275,4 @@
   }
   
   
-  .logo{
-  margin-left: 0px;
-    /* color: #000000; */
-    /* background-color: #000000; */
-    border: 0px;
-    background-color: rgba(23, 23, 23, 0.3);
-    background-image: url(logo.png);
-    background-size: cover;
-    width: 60px;
-    height: 60px;
-    align-content: flex-end;
-    border-radius: 20px;
-    cursor: pointer;
-  }
+

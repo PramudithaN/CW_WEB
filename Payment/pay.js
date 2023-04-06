@@ -33,31 +33,10 @@ form.addEventListener('submit', (event) => {
   `;
   displayData.innerHTML = data;
 
-  // Clear form inputs
-  //  document.querySelector('#full-name').value = '';
-  //  document.querySelector('#email').value = '';
-  //  document.querySelector('#address').value = '';
-  //  document.querySelector('#city').value = '';
-  //  document.querySelector('#state').value = '';
-  //  document.querySelector('#zip-code').value = '';
-  //  document.querySelector('#card-name').value = '';
-  //  document.querySelector('#card-number').value = '';
-  //  document.querySelector('#exp-month').value = '';
-  //  document.querySelector('#exp-year').value = '';
-  //  document.querySelector('#cvv').value = '';
+  // Open confirmation dialog
+  const dialogBox = document.querySelector('#dialog-box');
+  dialogBox.style.display = 'block';
 
   form.reset();
 });
 
-
-const openDialogButton = document.querySelector('#open-dialog-button');
-const closeDialogButton = document.querySelector('#close-dialog-button');
-const dialogBox = document.querySelector('#dialog-box');
-
-openDialogButton.addEventListener('click', () => {
-  dialogBox.style.display = 'block';
-});
-
-closeDialogButton.addEventListener('click', () => {
-  dialogBox.style.display = 'none';
-});

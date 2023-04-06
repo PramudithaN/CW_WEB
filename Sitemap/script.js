@@ -10,6 +10,7 @@ let quiz = document.querySelector('.quiz');
 let sitemap = document.querySelector('.sitemap');
 let comment = document.querySelector('.comment');
 let aboutUs = document.querySelector('.contact-us');
+let buy = document.querySelector('.buy');
 
 let mainText = document.querySelector(".main-text");
 let mainLine = document.querySelectorAll(".main-line");
@@ -17,51 +18,11 @@ let contentArc = document.querySelector(".content-arc");
 let text = document.querySelectorAll(".text");
 let arc = document.querySelectorAll(".arc");
 let circle = document.querySelectorAll(".circle");
+let line = document.querySelectorAll(".line");
 
 
 // hover effects
 digitalArt.addEventListener('mouseenter',()=> {
-    mainText.style.setProperty('fill','#E80F88');
-    mainLine[0].style.setProperty('stroke','#E80F88');
-    contentArc.style.setProperty('stroke','#E80F88');
-    text[0].style.setProperty('fill','#E80F88');
-    arc[0].style.setProperty('stroke','#E80F88');
-    circle[0].style.setProperty('fill','#E80F88');
-    circle[1].style.setProperty('fill','#E80F88');
-});
-digitalArt.addEventListener('mouseleave',()=> {
-    mainText.style.setProperty('fill','white');
-    mainLine[0].style.setProperty('stroke','white');
-    contentArc.style.setProperty('stroke','white');
-    text[0].style.setProperty('fill','white');
-    arc[0].style.setProperty('stroke','white');
-    circle[0].style.setProperty('fill','white');
-    circle[1].style.setProperty('fill','white');
-});
-
-
-handdrawn.addEventListener('mouseenter',()=> {
-    mainText.style.setProperty('fill','#C147E9');
-    mainLine[0].style.setProperty('stroke','#C147E9');
-    contentArc.style.setProperty('stroke','#C147E9');
-    text[1].style.setProperty('fill','#C147E9');
-    text[2].style.setProperty('fill','#C147E9');
-    arc[1].style.setProperty('stroke','#C147E9');
-    circle[0].style.setProperty('fill','#C147E9');
-    circle[1].style.setProperty('fill','#C147E9');
-});
-handdrawn.addEventListener('mouseleave',()=> {
-    mainText.style.setProperty('fill','white');
-    mainLine[0].style.setProperty('stroke','white');
-    contentArc.style.setProperty('stroke','white');
-    text[1].style.setProperty('fill','white');
-    text[2].style.setProperty('fill','white');
-    arc[1].style.setProperty('stroke','white');
-    circle[0].style.setProperty('fill','white');
-    circle[1].style.setProperty('fill','white');
-});
-
-aiArt.addEventListener('mouseenter',()=> {
     mainText.style.setProperty('fill','#4E9F3D');
     mainLine[0].style.setProperty('stroke','#4E9F3D');
     contentArc.style.setProperty('stroke','#4E9F3D');
@@ -70,7 +31,7 @@ aiArt.addEventListener('mouseenter',()=> {
     circle[0].style.setProperty('fill','#4E9F3D');
     circle[1].style.setProperty('fill','#4E9F3D');
 });
-aiArt.addEventListener('mouseleave',()=> {
+digitalArt.addEventListener('mouseleave',()=> {
     mainText.style.setProperty('fill','white');
     mainLine[0].style.setProperty('stroke','white');
     contentArc.style.setProperty('stroke','white');
@@ -80,7 +41,8 @@ aiArt.addEventListener('mouseleave',()=> {
     circle[1].style.setProperty('fill','white');
 });
 
-aestheticArt.addEventListener('mouseenter',()=> {
+
+handdrawn.addEventListener('mouseenter',()=> {
     mainText.style.setProperty('fill','#00A8CC');
     mainLine[0].style.setProperty('stroke','#00A8CC');
     contentArc.style.setProperty('stroke','#00A8CC');
@@ -90,7 +52,7 @@ aestheticArt.addEventListener('mouseenter',()=> {
     circle[0].style.setProperty('fill','#00A8CC');
     circle[1].style.setProperty('fill','#00A8CC');
 });
-aestheticArt.addEventListener('mouseleave',()=> {
+handdrawn.addEventListener('mouseleave',()=> {
     mainText.style.setProperty('fill','white');
     mainLine[0].style.setProperty('stroke','white');
     contentArc.style.setProperty('stroke','white');
@@ -101,23 +63,67 @@ aestheticArt.addEventListener('mouseleave',()=> {
     circle[1].style.setProperty('fill','white');
 });
 
+aiArt.addEventListener('mouseenter',()=> {
+    mainText.style.setProperty('fill','#C147E9');
+    mainLine[0].style.setProperty('stroke','#C147E9');
+    contentArc.style.setProperty('stroke','#C147E9');
+    text[2].style.setProperty('fill','#C147E9');
+    arc[1].style.setProperty('stroke','#C147E9');
+    circle[0].style.setProperty('fill','#C147E9');
+    circle[1].style.setProperty('fill','#C147E9');
+});
+aiArt.addEventListener('mouseleave',()=> {
+    mainText.style.setProperty('fill','white');
+    mainLine[0].style.setProperty('stroke','white');
+    contentArc.style.setProperty('stroke','white');
+    text[2].style.setProperty('fill','white');
+    arc[1].style.setProperty('stroke','white');
+    circle[0].style.setProperty('fill','white');
+    circle[1].style.setProperty('fill','white');
+});
+
+aestheticArt.addEventListener('mouseenter',()=> {
+    mainText.style.setProperty('fill','#E80F88');
+    mainLine[0].style.setProperty('stroke','#E80F88');
+    contentArc.style.setProperty('stroke','#E80F88');
+    text[0].style.setProperty('fill','#E80F88');
+    text[1].style.setProperty('fill','#E80F88');
+    arc[0].style.setProperty('stroke','#E80F88');
+    circle[0].style.setProperty('fill','#E80F88');
+    circle[1].style.setProperty('fill','#E80F88');
+});
+aestheticArt.addEventListener('mouseleave',()=> {
+    mainText.style.setProperty('fill','white');
+    mainLine[0].style.setProperty('stroke','white');
+    contentArc.style.setProperty('stroke','white');
+    text[0].style.setProperty('fill','white');
+    text[1].style.setProperty('fill','white');
+    arc[0].style.setProperty('stroke','white');
+    circle[0].style.setProperty('fill','white');
+    circle[1].style.setProperty('fill','white');
+});
+
 gallery.addEventListener('mouseenter',()=> {
     mainText.style.setProperty('fill','#00A8CC');
     mainLine[0].style.setProperty('stroke','#00A8CC');
     mainLine[1].style.setProperty('stroke','#00A8CC');
+    mainLine[2].style.setProperty('stroke','#00A8CC');
     text[6].style.setProperty('fill','#00A8CC');
     arc[4].style.setProperty('stroke','#00A8CC');
     circle[1].style.setProperty('fill','#00A8CC');
     circle[2].style.setProperty('fill','#00A8CC');
+    circle[3].style.setProperty('fill','#00A8CC');
 });
 gallery.addEventListener('mouseleave',()=> {
     mainText.style.setProperty('fill','white');
     mainLine[0].style.setProperty('stroke','white');
     mainLine[1].style.setProperty('stroke','white');
+    mainLine[2].style.setProperty('stroke','white');
     text[6].style.setProperty('fill','white');
     arc[4].style.setProperty('stroke','white');
     circle[1].style.setProperty('fill','white');
     circle[2].style.setProperty('fill','white');
+    circle[3].style.setProperty('fill','white');
 });
 
 
@@ -125,23 +131,43 @@ shop.addEventListener('mouseenter',()=> {
     mainText.style.setProperty('fill','#E80F88');
     mainLine[0].style.setProperty('stroke','#E80F88');
     mainLine[1].style.setProperty('stroke','#E80F88');
-    mainLine[2].style.setProperty('stroke','#E80F88');
     text[7].style.setProperty('fill','#E80F88');
     arc[5].style.setProperty('stroke','#E80F88');
     circle[1].style.setProperty('fill','#E80F88');
     circle[2].style.setProperty('fill','#E80F88');
-    circle[3].style.setProperty('fill','#E80F88');
 });
 shop.addEventListener('mouseleave',()=> {
     mainText.style.setProperty('fill','white');
     mainLine[0].style.setProperty('stroke','white');
     mainLine[1].style.setProperty('stroke','white');
-    mainLine[2].style.setProperty('stroke','white');
     text[7].style.setProperty('fill','white');
     arc[5].style.setProperty('stroke','white');
     circle[1].style.setProperty('fill','white');
     circle[2].style.setProperty('fill','white');
-    circle[3].style.setProperty('fill','white');
+
+});
+
+buy.addEventListener('mouseenter',()=> {
+    mainText.style.setProperty('fill','#E80F88');
+    mainLine[0].style.setProperty('stroke','#E80F88');
+    mainLine[1].style.setProperty('stroke','#E80F88');
+    line[0].style.setProperty('stroke','#E80F88');
+    text[7].style.setProperty('fill','#E80F88');
+    text[12].style.setProperty('fill','#E80F88');
+    arc[5].style.setProperty('stroke','#E80F88');
+    circle[1].style.setProperty('fill','#E80F88');
+    circle[2].style.setProperty('fill','#E80F88');
+});
+buy.addEventListener('mouseleave',()=> {
+    mainText.style.setProperty('fill','white');
+    mainLine[0].style.setProperty('stroke','white');
+    mainLine[1].style.setProperty('stroke','white');
+    line[0].style.setProperty('stroke','white');
+    text[7].style.setProperty('fill','white');
+    text[12].style.setProperty('fill','white');
+    arc[5].style.setProperty('stroke','white');
+    circle[1].style.setProperty('fill','white');
+    circle[2].style.setProperty('fill','white');
 
 });
 

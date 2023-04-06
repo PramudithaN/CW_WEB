@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 
 * {
-  /* background-color: #141414; */
-  /* backdrop-filter: blur(1px); */
-/* background-color: rgba(34, 34, 34, 0.3); */
 background-size: cover;
   margin: 0;
   padding: 0;
@@ -64,10 +61,24 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
-  background: #0ccc2c;
-  transform: translateY(3px);
-  cursor: pointer;
+button[type="submit"] {
+  display: flex;
+    margin: 0.3rem auto 0 auto;
+    padding: 12px 20px;
+    border: #ffffff;
+    border-radius: 10px;
+    background-color: #008cff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover{
+background: #0ccc2c;
+transform: translateY(3px);
+cursor: pointer;
 }
 
 header {
@@ -82,15 +93,6 @@ header {
   z-index: 10000;
   font-size: 1.2rem;
 }
-
-/* header .Logo {
-  color: azure;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-} */
 
 header ul {
   display: flex;
@@ -126,16 +128,14 @@ body::-webkit-scrollbar {
 }
 
 #fixed-btn {
-  /* display: flex; */
     margin: 0.3rem auto 0 auto;
     padding: 12px 20px;
     position: fixed;
     top: 150px;
-    right: -10px;
+    left: 1410px;
     border: #ffffff;
     border-radius: 10px;
-    /* background-color: #008cff; */
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(78, 78, 78, 0.1);
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
@@ -148,3 +148,41 @@ body::-webkit-scrollbar {
   transform: translateY(3px);
   cursor: pointer;
 }
+
+#fixed-btn1 {
+  margin-top: -350px;
+  margin-right: 150px;
+  padding-left:70px;
+  top: 250px;
+  width: 200px;
+  border: #ffffff;
+  border-radius: 60px;
+  background-color: rgba(245, 187, 39, 0.8);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#fixed-btn1:hover {
+  color: black;
+  background: #cc620c;
+  transform: translateY(3px);
+  cursor: pointer;
+}
+
+
+
+.logo{
+  margin-left: 0px;
+    border: 0px;
+    background-color: rgba(23, 23, 23, 0.3);
+    background-image: url(logo.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    align-content: flex-end;
+    border-radius: 20px;
+    cursor: pointer;
+  }
