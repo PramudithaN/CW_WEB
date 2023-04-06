@@ -15,109 +15,42 @@ window.onload = ()=>{
         const tittles = ["Digital Eye","Robot","Smoking Skull","Captain Eagle","Liquid Metal","AI-Generated Robot Women",
                         "Dreaming Girl","Calm Girl","Queen Esprenza","Stylish Clemenza","Thoughtful Lovina Portrait","White Kingfisher"];
         
-        const descriptions = [`This artwork features a highly detailed digital rendering of an eye. The eye is depicted 
-                                in stunning realism, with every detail from the iris to the eyelashes rendered in breathtaking 
-                                accuracy. The image is highly stylized, with a neon glow emanating from within the eye, creating 
-                                a sense of otherworldly energy. The colors are bright and vivid, with shades of blue and green 
-                                dominating the scene. As the viewer looks closer, they can see intricate patterns and designs 
-                                within the iris, adding an additional layer of detail to the piece. The overall effect is mesmerizing, 
-                                drawing the viewer in and holding their attention with its striking beauty and stunning realism. 
-                                Whether viewed up close or from a distance, this digital eye is a true masterpiece of digital art.`,
+        const descriptions = [`This piece of art includes a digital depiction of an eye that is extremely detailed. Every aspect of the eye, from the iris to the eyelashes, is reproduced with incredible accuracy, giving the image an astonishing level of realism. The artwork is extremely stylised, and the neon glow coming from the eye gives it an unearthly intensity. The setting is dominated by shades of blue and green, and the colors are rich and vibrant. A further level of depth is added to the piece when the observer gets closer and can make out fascinating patterns and shapes within the iris. The total result is fascinating, capturing the attention of the observer with its remarkable realism and breathtaking beauty.
+        This digital eye is a stunning masterpiece whether seen up close or far away.`,
 
-                               `This digital artwork features a futuristic, highly detailed rendering of a robot. The robot is depicted 
-                               in stunning detail, with each bolt and rivet rendered in breathtaking accuracy. The colors are bright and 
-                               vivid, with shades of silver, blue, and red dominating the scene. The robot is highly stylized, with sleek, 
-                               angular lines and a sense of movement and energy within the image. As the viewer looks closer, they can see 
-                               additional details within the robot, including intricate circuitry and wiring visible through the joints and 
-                               limbs. The overall effect is stunning, drawing the viewer in and holding their attention with its intricate 
-                               details and striking visual style. Whether viewed up close or from a distance, this robot digital art is a 
-                               true masterpiece of digital art, showcasing the incredible creativity and technical skill of the artist`,
+                               `This digital piece of art depicts a robot in a futuristic, extremely detailed representation. The robot is shown
+
+                               with each bolt and rivet depicted in astounding accuracy and detail. Shades of red, blue, and silver predominate in the picture, which is painted in strong, vibrant colors. The robot has a really stylish design with smooth,
+                               
+                               sharp shapes, as well as a feeling of motion and energy. When the spectator gets closer, they can see more internal elements of the robot, such as complex wiring and circuitry that is visible through the joints and limbs. The entire effect is breathtaking, capturing the viewer's interest with its minute details and startling visual approach. This robot digital art is an absolute masterwork of digital art, whether seen up close or from a distance.`,
                             
-                               `This digital artwork features a stylized, highly detailed rendering of a skull engulfed in smoke. The 
-                               skull is depicted in sharp detail, with each crack and crevice rendered in striking accuracy. The smoke 
-                               is portrayed in wispy, swirling patterns, creating a sense of movement and energy within the scene. 
-                               The colors are muted, with shades of gray and black dominating the piece, giving the image a sense of 
-                               mystery and danger. As the viewer examines the piece more closely, they can see additional details within 
-                               the skull, including intricate patterns etched into the bone. The overall effect is dark, haunting, and 
-                               highly impactful, drawing the viewer in with its striking visual style and bold imagery. Whether viewed 
-                               as a standalone piece or as part of a larger collection, this smoking skull digital art is a true masterpiece 
-                               of digital art.`,
+                               `This digital piece of art depicts a skull smoke in a stylised, highly detailed portrayal. The
+
+                               Each crack and crevice of the skull are recreated in startling realism and are represented in fine detail. The smoke is depicted in wispy, swirling patterns, giving the setting a sense of motion and vitality.
+                               
+                               The piece's muted colors and predominant use of gray and black give it a sense of mystery and menace. The spectator can notice additional details, such as elaborate patterns etched into the bone, when they look at the object more closely. With its remarkable visual aesthetic and provocative imagery, the entire impression is menacing, eerie, and incredibly effective`,
                             
-                               `This digital artwork features a stylized, heroic depiction of an eagle in a captain's uniform. The eagle is portrayed 
-                               in mid-flight, with wings spread wide and a determined look on its face. The colors are bright and bold, with shades 
-                               of red, white, and blue dominating the scene, emphasizing the patriotic and heroic theme of the artwork. The eagle's 
-                               uniform is highly detailed, with intricate embroidery and medals visible on the chest and sleeves. As the viewer 
-                               looks closer, they can see additional details within the feathers, adding an additional layer of depth and realism 
-                               to the piece. `,
+                               `An eagle wearing a captain's uniform is stylised and heroically portrayed in this graphic artwork. A depiction of an eagle in flight with wide spread wings and a resolute expression on its face. The scene is predominantly colored in colours of red, white, and blue, highlighting the patriotic and heroic theme of the artwork. The colors are vivid and powerful. a bald eagle's
+
+                               Intricate embroidery and decorations are clearly evident on the chest and sleeves of the uniform, which is quite elaborate. An additional layer of depth and realism is added to the piece when the observer gets closer and notices more features contained within the feathers. `,
                             
-                               `This digital artwork features a highly stylized, abstract depiction of flowing liquid metal. The image is highly detailed, 
-                               with every droplet and rivulet rendered in striking accuracy. The colors are muted, with shades of silver, gray, and black 
-                               dominating the scene, giving the image a sense of depth and texture. The metal is depicted as if it is in motion, with 
-                               swirling patterns and eddies visible throughout the piece, creating a sense of energy and fluidity. As the viewer looks 
-                               closer, they can see additional details within the metal, including tiny bubbles and ripples visible on the surface. 
-                               The overall effect is mesmerizing, drawing the viewer in and holding their attention with its intricate details and 
-                               stunning visual style. Whether viewed up close or from a distance, this liquid metal digital art is a true masterpiece 
-                               of digital art, showcasing the incredible creativity and technical skill of the artist.`,
+                               `An abstract, highly stylized representation of flowing liquid metal appears in this digital artwork. Every droplet and rivulet have been drawn with astounding accuracy, giving the image a great level of detail. The scene is dominated by muted colours of silver, gray, and black, which give the picture a sense of depth and texture. With swirling patterns and eddies visible throughout the sculpture, the metal is shown as though it is in motion, giving it a sense of vitality and fluidity. The spectator may see more features in the metal as they get closer, including minute bubbles and ripples that are visible on the surface.
+                               The whole result is captivating, capturing the viewer's interest with its minute intricacies and breathtaking visual appeal.`,
                             
-                               `This digital artwork features a stunning and highly detailed rendering of a robotic head, generated entirely through 
-                               the use of artificial intelligence. The robotic head is designed to resemble a woman, with soft features and feminine 
-                               lines, yet its metallic surface gives it a futuristic, almost otherworldly appearance. The colors are muted, with shades 
-                               of silver and gray dominating the scene, emphasizing the machine-like quality of the piece. As the viewer examines the 
-                               image more closely, they can see intricate details within the robot's features, including subtle etchings on the forehead 
-                               and cheeks. The overall effect is both captivating and eerie, drawing the viewer in with its stunning realism and futuristic 
-                               aesthetic. This AI-generated robot women head digital art is a true masterpiece of digital art, showcasing the incredible 
-                               potential of artificial intelligence and the talent of the artist who brought it to life.`,
+                               `The amazing and meticulous representation of a robotic head in this piece of digital art was produced solely by artificial intelligence. The robotic head's soft features and feminine lines are meant to resemble those of a woman, but its metallic surface gives it a futuristic, even alien aspect. The scenario is depicted in muted colors that emphasize the machine-like nature of the artwork. Silver and gray dominate the picture. When the spectator looks at the image more carefully, they can discern minute details in the robot's appearance, such as delicate etchings on the forehead and cheeks. The whole effect, with its astounding realism and future design, is both intriguing and unsettling. This digital artwork of a robot woman's head created by AI is a genuine work of art.`,
                             
-                               `This digital artwork features a surreal and dreamlike depiction of a young girl lost in thought. The girl is depicted with 
-                               her eyes closed, her head tilted to one side, and her hair falling loosely around her face. The colors are soft and muted, 
-                               with shades of pink and purple dominating the scene, creating a sense of calm and serenity. The girl's surroundings are 
-                               indistinct, with vague outlines of trees and flowers visible in the background, adding to the dreamlike quality of the 
-                               piece. As the viewer looks closer, they can see intricate details within the girl's hair and clothing, as well as subtle 
-                               variations in color and texture throughout the image. The overall effect is enchanting, drawing the viewer in and evoking 
-                               a sense of peaceful introspection.`,
+                               `This digital piece of art portrays a young girl lost in meditation in a weird and dreamlike manner. The girl's hair is loosely wrapped about her face, her eyes are closed, and she has her head cocked to one side in the illustration. There is a sense of calm and tranquillity in the landscape because of the soft, muted colors, which are mostly pink and purple. The surreal nature of the painting is heightened by the girl's hazy surroundings, which include hazy silhouettes of trees and flowers in the backdrop. When the viewer focuses more closely, they can discern minute details in the girl's hair and outfit in addition to the image's subtle color and texture changes. The whole result is wonderful.`,
                             
-                                `This digital painting art features a serene and peaceful depiction of a young girl lost in contemplation. The girl is 
-                                depicted in soft, gentle strokes, with her hair falling loosely around her shoulders, and her eyes closed in peaceful 
-                                meditation. The colors are muted, with shades of blue and green dominating the scene, creating a sense of tranquility 
-                                and calm. The girl's surroundings are indistinct, with vague outlines of trees and flowers visible in the background, 
-                                adding to the peaceful quality of the piece. As the viewer looks closer, they can see intricate details within the girl's 
-                                hair and clothing, as well as subtle variations in color and texture throughout the image. The overall effect is enchanting, 
-                                drawing the viewer in and evoking a sense of peaceful introspection. Whether viewed as a standalone piece or as part of a 
-                                larger collection, this Calm Girl digital painting art is a true masterpiece of digital art, showcasing the incredible 
-                                creativity and technical skill of the artist`,
+                                `A young girl lost in thought is shown in this quiet and beautiful work of digital painting art. The girl is drawn with delicate, smooth strokes, with her hair hanging loosely around her shoulders and her eyes closed in quiet contemplation. Shades of blue and green predominate in the understated color scheme, which gives the setting a sense of peace and tranquility. The piece's serene atmosphere is enhanced by the girl's hazy surroundings, which include hazy silhouettes of trees and flowers in the backdrop. When the viewer focuses more closely, they can discern minute details in the girl's hair and outfit in addition to the image's subtle color and texture changes. The overall result is beautiful.`,
                             
-                                `This digital art piece features a regal and majestic depiction of a queen in all her glory. Queen Esprenza is portrayed with 
-                                her head held high, exuding strength and confidence. She is adorned in a luxurious gown, with intricate details and sparkling 
-                                jewels that catch the eye. The colors are rich and bold, with shades of deep purple and gold dominating the scene, creating a 
-                                sense of elegance and royalty. The queen is surrounded by a lush and detailed environment, with a castle visible in the background, 
-                                and intricate patterns and textures throughout the image. As the viewer examines the piece more closely, they can see subtle 
-                                details in the queen's facial features and clothing, as well as the intricate design of her crown. The overall effect is 
-                                breathtaking, drawing the viewer in with its stunning realism and awe-inspiring visual style.`,
+                                `This work of digital art portrays a queen in all her splendor in a regal and majestic way. The image of Queen Esprenza shows her with her head raised high, radiating power and assurance. She is dressed in a pricey gown with exquisite craftsmanship and eye-catching sparkling gems. Rich, striking hues of deep purple and gold dominate the landscape, lending it a feeling of opulence and power. A castle can be seen in the backdrop, and the queen is surrounded by a rich, well drawn setting that features complex patterns and textures. The queen's clothes and facial features, as well as the complex design of her crown, are all visible as the visitor looks at the sculpture more attentively.`,
                             
-                                `This digital painting art is a close-up portrait of the stylish and chic woman named Clemenza. The portrait focuses on Clemenza's 
-                                head and upper body, capturing her effortless grace and sophistication. She is portrayed with a gentle smile on her face and her 
-                                head tilted slightly, exuding confidence and poise. The colors are rich and bold, with shades of deep red and gold dominating the 
-                                scene, creating a sense of glamour and opulence. Clemenza's facial features are meticulously detailed, with intricate lines and 
-                                contours highlighting her eyes, lips, and cheekbones. Her hair is styled in an elegant updo, with intricate details and a beautiful 
-                                hairpin visible. The overall effect is breathtaking, drawing the viewer in with its stunning realism and high-end visual style.`,
+                                `This digital painting depicts a close-up of the fashionable and elegant Clemenza. In order to capture Clemenza's easy grace and sophistication, the portrait concentrates on her head and upper torso. She is represented with a soft grin on her face and a small cocked head, radiating poise and self-assurance. Rich, intense hues of deep crimson and gold dominate the landscape, giving it a feeling of wealth and beauty. Clemenza has incredibly precise face features, with fine lines and contours accentuating her eyes, lips, and cheekbones. Her hair is done in a sophisticated updo with ornate accents and a stunning hairpin on display. With its amazing realism and high-end visual flair, the whole impact is breath-taking.`,
                             
-                                `This digital painting art is a portrait of a woman named Lovina, depicted with a pensive and introspective expression. Her face 
-                                is turned slightly to the side, with her chin resting on her hand, conveying a sense of deep thought and reflection. The colors 
-                                are muted and subdued, with shades of blue and green dominating the scene, creating a calm and contemplative mood. Lovina's facial 
-                                features are meticulously detailed, with intricate lines and contours highlighting her eyes, nose, and lips. Her hair is styled in 
-                                loose waves, with subtle details and shading adding depth and texture to the image. The overall effect is serene and introspective, 
-                                drawing the viewer in with its subtle realism and emotional depth. Whether viewed up close or from a distance, this Thoughtful 
-                                Lovina Portrait digital painting art is a true masterpiece of digital art.`,
+                                `This piece of digital art is a portrait of Lovina, a woman with a thoughtful and introspective look. She appears to be in deep meditation and reflection as her chin rests on her palm and her face is inclined slightly to one side. An atmosphere of tranquility and introspection is produced by the scene's muted and subdued color scheme, which is dominated by blue and green tones. Lovina has incredibly precise facial features, with fine lines and curves accentuating her eyes, nose, and lips. Her hair is arranged in loose waves, and the image is given depth and character by the minor details and shading. The whole effect is contemplative and tranquil, capturing the attention of the observer with its deft realism and emotional depth. either when seen closely or distantly.`,
                             
-                                `This digital artwork features a stunning white kingfisher bird depicted against a black background. The contrast 
-                               between the bright white feathers of the bird and the deep black background creates a dramatic and striking effect. 
-                               The kingfisher bird is portrayed in a majestic pose, with its head turned to the side and its beady eyes focused 
-                               intently on something out of frame. The intricate details of the bird's feathers, beak, and eyes are meticulously 
-                               rendered, creating a sense of depth and texture in the image. The black background serves to emphasize the bird's 
-                               form and beauty, making it stand out even more against the stark contrast. The overall effect is powerful and 
-                               mesmerizing, drawing the viewer in with its intense focus and stunning realism. Whether viewed up close or from 
-                               a distance, this White Kingfisher Digital Artwork with Black Background is a true masterpiece of digital art, 
-                               showcasing the incredible talent and technical skill of the artist.`]
+                                `A beautiful white kingfisher bird is shown in this digital artwork on a dark background. The stark and arresting impression is brought about by the stark contrast between the bird's brilliant white feathers and the dark background.
+                                With its head inclined to the side and its beady eyes fixed intently on something out of frame, the kingfisher bird is shown in a regal position. The image has a sense of depth and texture thanks to the detailed rendering of the bird's feathers, beak, and eyes. The bird stands out even more against the dramatic contrast thanks to the black background, which draws attention to its shape and attractiveness. The whole impact is strong and hypnotic, captivating the observer with its laser-like concentration and breathtaking realism.`];
 
         totalImage.textContent = gallery.length;
         let newIndex = i;
