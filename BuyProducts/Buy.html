@@ -10,300 +10,258 @@
 <body>
     <header class="navbar">
         <header class="navbar">
-            <a href="../MainPage/Home.html"> 
-              <button class="logo"></button>
+            <a href="../MainPage/Home.html">
+                <button class="logo"></button>
             </a>
-        <ul>
-            <li><a href="../MainPage/Home.html">Home</a></li>
-            <li><a href="../Gallery/Gallery.html">Gallery</a></li>
-            <li class="active"><a href="../BuyProducts/Buy.html">Shop</a></li>
-            <li><a href="../Quiz/quiz.html">Quiz</a></li>
-            <li><a href="../Sitemap/Sitemap1.html">Sitemap</a></li>
-            <li><a href="../Comments/Comment.html">Comments</a></li>
-            <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
-        </ul>
+            <ul>
+                <li><a href="../MainPage/Home.html">Home</a></li>
+                <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+                <li class="active"><a href="../BuyProducts/Buy.html">Shop</a></li>
+                <li><a href="../Quiz/quiz.html">Quiz</a></li>
+                <li><a href="../Sitemap/Sitemap1.html">Sitemap</a></li>
+                <li><a href="../Comments/Comment.html">Comments</a></li>
+                <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
+            </ul>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script type="text/javascript">
-            $(document).on("click", "ul li", function () {
-                $(this).addClass("active").siblings().removeClass();
-            });
-        </script>
-    </header>
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <script type="text/javascript">
+                $(document).on("click", "ul li", function () {
+                    $(this).addClass("active").siblings().removeClass();
+                });
+            </script>
+        </header>
 
 
-    <!-- <section>
-        <h1 type="cart">
-            <div class="shop container">
-                <a href="#" class="logo"></a>
-                <i class="bx bxs-shopping-bag-alt" id="cart-icon"></i>
-                <div class="cart">
-                    <h2 class="cart-title">Your Cart</h2>
-                    <div class="cart-content"></div>
-                    <div class="total">
-                        <div class="total-title">Total</div>
-                        <div class="total-price">$0</div>
+        <section class="shop container">
+            <section class="sec">
+                <h2 class="section-title">Shop Products</h2>
+                <div>
+                    <i class='bx bxs-shopping-bag-alt' id="cart-icon"></i>
+
+                    <div class="cart">
+
+                        <h2 class="cart-title">Your Cart</h2>
+                        <div class="cart-content">
+
+
+                        </div>
+                        <div class="total">
+
+                            <div class="total-title">Total</div>
+                            <div class="total-price">$0</div>
+
+                        </div>
+                        <a href="../Payment/pay.html">
+                            <button type="button" class="btn-buy">Buy Now</button>
+                        </a>
+
+                        <i class='bx bx-x' id="close-cart"></i>
                     </div>
-                    <button type="button" class="btn-buy">Buy Now</button>
-                    <i class="bx bx-x" id="close-cart"></i>
+
+
                 </div>
-            </div>
-        </h1>
-    </section> -->
 
-    <section class="shop container">
-        <!-- <h1 class="cart-item" type="cart">
-            <div>
-                <a href="#" class="logo"></a>
-                <i class="bx bxs-shopping-bag-alt" id="cart-icon"></i>
-                <div class="cart">
-                    <h2 class="cart-title">Your Cart</h2>
-                    <div class="cart-content"></div>
-                    <div class="total">
-                        <div class="total-title">Total</div>
-                        <div class="total-price">$0</div>
+            </section>
+
+            <section>
+
+                <div class="shop-content">
+                    <div class="product-box">
+
+
+                        <img src="ai1.jpg" alt="" class="product-img" />
+                        <span class="product-title">a1</span>
+                        <span class="price">$1.99</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
                     </div>
-                    <button type="button" class="btn-buy">Buy Now</button>
-                    <i class="bx bx-x" id="close-cart"></i>
+                    <div class="product-box">
+                        <img src="ai2.jpg" alt="" class="product-img" />
+                        <span class="product-title">a2</span>
+                        <span class="price">$0.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="ai3.jpg" alt="" class="product-img" />
+                        <span class="product-title">a3</span>
+                        <span class="price">$2.99</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="ai4.jpg" alt="" class="product-img" />
+                        <span class="product-title">a4</span>
+                        <span class="price">$10.00</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="ai5.jpg" alt="" class="product-img" />
+                        <span class="product-title">a5</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="ai7.jpg" alt="" class="product-img" />
+                        <span class="product-title">a7</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="ai8.jpg" alt="" class="product-img" />
+                        <span class="product-title">a8</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="ai9.jpg" alt="" class="product-img" />
+                        <span class="product-title">a9</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="ai10.jpg" alt="" class="product-img" />
+                        <span class="product-title">a10</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="ai11.jpg" alt="" class="product-img" />
+                        <span class="product-title">a11</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="ai12.jpg" alt="" class="product-img" />
+                        <span class="product-title">a12</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="D1.jpg" alt="" class="product-img" />
+                        <span class="product-title">d1</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="D2.jpg" alt="" class="product-img" />
+                        <span class="product-title">d2</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="D3.jpg" alt="" class="product-img" />
+                        <span class="product-title">d3</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="D4.jpg" alt="" class="product-img" />
+                        <span class="product-title">d4</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="D5.jpg" alt="" class="product-img" />
+                        <span class="product-title">d5</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="D6.jpg" alt="" class="product-img" />
+                        <span class="product-title">d6</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="D7.jpg" alt="" class="product-img" />
+                        <span class="product-title">d7</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="D8.jpg" alt="" class="product-img" />
+                        <span class="product-title">d8</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="D9.jpg" alt="" class="product-img" />
+                        <span class="product-title">d9</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="D10.jpg" alt="" class="product-img" />
+                        <span class="product-title">d10</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="D11.jpg" alt="" class="product-img" />
+                        <span class="product-title">d11</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="h1.jpg" alt="" class="product-img" />
+                        <span class="product-title">h1</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="h2.jpg" alt="" class="product-img" />
+                        <span class="product-title">h2</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="h3.jpg" alt="" class="product-img" />
+                        <span class="product-title">h3</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
+                    <div class="product-box">
+                        <img src="h4.jpg" alt="" class="product-img" />
+                        <span class="product-title">h4</span>
+                        <span class="price">$5.09</span>
+                        <i class="bx bxs-shopping-bag-alt add-cart"></i>
+                    </div>
                 </div>
-            </div>
-        </h1> -->
+
+            </section>
+
+            <script src="buy.js"></script>
+            <video id="bg-video" autoplay muted loop>
+                <source src="sewmiebi.mp4" type="video/mp4" />
+            </video>
+
+            <style>
+                #bg-video {
+                    position: fixed;
+                    right: 0;
+                    bottom: 0;
+                    min-width: 100%;
+                    min-height: 100%;
+                    z-index: -1;
+                }
+            </style>
 
 
-        <section class="sec">
-        <h2 class="section-title">Shop Products</h2>
+            <div class="scrollTop" onclick="scrollToTop();"></div>
+            <script type="text/javascript">
+                window.addEventListener("scroll", function () {
+                    var scroll = document.querySelector(".scrollTop");
+                    scroll.classList.toggle("active", window.scrollY > 500);
+                });
 
-       
-        <div>
-            
-            <!-- <a href="#" class="logo"></a> -->
-            <i class='bx bxs-shopping-bag-alt' id="cart-icon"></i>
-
-                <div class="cart">
-                    
-                    <h2 class="cart-title">Your Cart</h2>
-                    <div class="cart-content">
-                        
-    
-                    </div>
-                    <div class="total">
-                        
-                        <div class="total-title">Total</div>
-                        <div class="total-price">$0</div>
-                        
-                    </div>
-                    <a href="../Payment/pay.html">
-                    <button type="button" class="btn-buy">Buy Now</button>
-                </a>
-
-                    <i class='bx bx-x' id="close-cart"></i>
-                </div>
-                
-            
-        </div>
-        
-    </section>
-    
-    <section>
-        
-        <div class="shop-content">
-            <div class="product-box">
-                
-            
-                <img src="ai1.jpg" alt="" class="product-img" />
-                <span class="product-title">a1</span>
-                <span class="price">$1.99</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="ai2.jpg" alt="" class="product-img" />
-                <span class="product-title">a2</span>
-                <span class="price">$0.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="ai3.jpg" alt="" class="product-img" />
-                <span class="product-title">a3</span>
-                <span class="price">$2.99</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="ai4.jpg" alt="" class="product-img" />
-                <span class="product-title">a4</span>
-                <span class="price">$10.00</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="ai5.jpg" alt="" class="product-img" />
-                <span class="product-title">a5</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="ai7.jpg" alt="" class="product-img" />
-                <span class="product-title">a7</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="ai8.jpg" alt="" class="product-img" />
-                <span class="product-title">a8</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="ai9.jpg" alt="" class="product-img" />
-                <span class="product-title">a9</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="ai10.jpg" alt="" class="product-img" />
-                <span class="product-title">a10</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="ai11.jpg" alt="" class="product-img" />
-                <span class="product-title">a11</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="ai12.jpg" alt="" class="product-img" />
-                <span class="product-title">a12</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="D1.jpg" alt="" class="product-img" />
-                <span class="product-title">d1</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="D2.jpg" alt="" class="product-img" />
-                <span class="product-title">d2</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="D3.jpg" alt="" class="product-img" />
-                <span class="product-title">d3</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="D4.jpg" alt="" class="product-img" />
-                <span class="product-title">d4</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="D5.jpg" alt="" class="product-img" />
-                <span class="product-title">d5</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="D6.jpg" alt="" class="product-img" />
-                <span class="product-title">d6</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="D7.jpg" alt="" class="product-img" />
-                <span class="product-title">d7</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="D8.jpg" alt="" class="product-img" />
-                <span class="product-title">d8</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="D9.jpg" alt="" class="product-img" />
-                <span class="product-title">d9</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="D10.jpg" alt="" class="product-img" />
-                <span class="product-title">d10</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="D11.jpg" alt="" class="product-img" />
-                <span class="product-title">d11</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="h1.jpg" alt="" class="product-img" />
-                <span class="product-title">h1</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="h2.jpg" alt="" class="product-img" />
-                <span class="product-title">h2</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="h3.jpg" alt="" class="product-img" />
-                <span class="product-title">h3</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-            <div class="product-box">
-                <img src="h4.jpg" alt="" class="product-img" />
-                <span class="product-title">h4</span>
-                <span class="price">$5.09</span>
-                <i class="bx bxs-shopping-bag-alt add-cart"></i>
-            </div>
-        </div>
-        
-    </section>
-
-    <script src="buy.js"></script>
-    <video id="bg-video" autoplay muted loop>
-        <source src="sewmiebi.mp4" type="video/mp4" />
-        <!-- Add more source tags for other video formats -->
-    </video>
-
-    <style>
-        #bg-video {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1;
-        }
-    </style>
-
-
-<div class="scrollTop" onclick="scrollToTop();"></div>
-<script type="text/javascript">
-  window.addEventListener("scroll", function () {
-    var scroll = document.querySelector(".scrollTop");
-    scroll.classList.toggle("active", window.scrollY > 500);
-  });
-
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
-</script>
-<a href="../Indivual/Sewmie.html">
-<button id="fixed-btn">Sewmini</button>
-</a>
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                    });
+                }
+            </script>
+            <a href="../Indivual/Sewmie.html">
+                <button id="fixed-btn">Sewmini</button>
+            </a>
 
 
 

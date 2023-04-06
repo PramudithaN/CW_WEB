@@ -1,15 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 
-.navbar{
-  /* background-color: rgba(74, 74, 74, 0.3); */
-
-  /* background: #242424; */
-}
 
 .logo{
 margin-left: 0px;
-  /* color: #000000; */
-  /* background-color: #000000; */
   border: 0px;
   background-color: rgba(23, 23, 23, 0.3);
   background-image: url(logo.png);
@@ -54,14 +47,6 @@ header {
   font-size: 1.2rem;
 }
 
-/* header .Logo {
-  color: azure;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-} */
 
 header ul {
   display: flex;
@@ -276,54 +261,6 @@ span {
   color: #fff;
 }
 
-/* Splash Screen
-.intro{
-  position: fixed;
-  z-index: 100;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #161616;
-  transition: 1s;
-} */
-
-/* .logo header{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: aliceblue;
-}
-
-.logo{
-  position: relative;
-  display: inline-block;
-  bottom: -20px;
-  opacity: 0;
-}
-
-.logo.active{
-  bottom: 0;
-  opacity: 1;
-  transform: ease-in-out 0.5s;
-}
-
-.logo.fade{
-  bottom: 150px;
-  opacity: 0;
-  transform: ease-in-out 0.5s;
-} */
-
-/* #preloader{
-  background: #ffffff url(Loader.gif) no-repeat center center;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-  object-position: top;
-} */
-
 footer {
   position: relative;
   padding: 100px;
@@ -338,7 +275,7 @@ footer {
     padding: 12px 20px;
     position: fixed;
     top: 150px;
-    right: -10px;
+    right: -10px; 
     border: #ffffff;
     border-radius: 10px;
     /* background-color: #008cff; */
@@ -357,125 +294,8 @@ footer {
   cursor: pointer;
 }
 
-/* .footer h2 {
-  justify-items: center;
-  padding-left: 300px;
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  color: #fff;
-} */
-
-/* .footer a {
-  text-align: justify;
-  align-items: center;
-  padding-left: 650px;
-  font-size: 1.6 em;
-  color: #fff;
-} */
-/* #icon{
-  padding-left: 100px;
-  width: 400px;
-  height: 200px;
-} */
-
-
-/* #icon {
-  width: 200px;
-  height: 100px;
-  padding-left: 1530px;
-  position: absolute;
-  display: inline-block;
-  border-radius: 100px;
-  background-image: url(aiart.jpg);
-  background-size: cover;
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  font-size: 1.5em;
-  z-index: 9;
-  transform: translateY(100px);
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-} */
-
-/* .spinner-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ff6347;
-  z-index: 999999;
-  } */
-/* -------------------------------------------------- */
-  /* #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff; you can set the background color to whatever you want
-    z-index: 9999; make sure the preloader appears on top of everything else
-  }
-  
-  add some animation to the preloader
-  #preloader:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 60px;
-    height: 60px;
-    margin: -30px 0 0 -30px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-    border-top-color: #333;
-    animation: spin 1s ease-in-out infinite;
-  }
-  
-  define the animation
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  } */
-
-  /* #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: 9999;
-  }
-  
-  #preloader .loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #3498db;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  } */
-
-  .navbar{
-  /* background-color: rgba(74, 74, 74, 0.3); */
-
-  /* background: #242424; */
-}
-
 .logo{
 margin-left: 0px;
-  /* color: #000000; */
-  /* background-color: #000000; */
   border: 0px;
   background-color: rgba(23, 23, 23, 0.3);
   background-image: url(logo.png);

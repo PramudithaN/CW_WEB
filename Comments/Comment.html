@@ -10,8 +10,11 @@
 </head>
 
 <body>
-    <header>
-        <a href="#" class="logo"></a>
+
+    <header class="navbar">
+        <a href="../MainPage/Home.html">
+            <button class="logo"></button>
+        </a>
         <ul>
             <li><a href="../MainPage/Home.html">Home</a></li>
             <li><a href="../Gallery/Gallery.html">Gallery</a></li>
@@ -29,36 +32,40 @@
             });
         </script>
     </header>
-<form action="https://formspree.io/f/mvonqbkl" method="POST">
-    <h1>Contact Us</h1>
-    <br>
-    <input type="text" placeholder="Name" autocomplete="off" required>
-    <input type="text" placeholder="Phone no" autocomplete="off" required>
-    <input type="email" placeholder="Email Address" autocomplete="off" required>
-    <textarea rows="5" cols="60" name="message" placeholder="Enter Text" autocomplete="off" required></textarea>
-    <button type="submit">Send Message</button>
-</form>
+    <form action="https://formspree.io/f/mvonqbkl" method="POST">
+        <h1>Contact Us</h1>
+        <br>
+        <input type="text" placeholder="Name" autocomplete="off" required>
+        <input type="text" placeholder="Phone no" autocomplete="off" required>
+        <input type="email" placeholder="Email Address" autocomplete="off" required>
+        <textarea rows="5" cols="60" name="message" placeholder="Enter Text" autocomplete="off" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
 
-<script src="buy.js"></script>
-<video id="bg-video" autoplay muted loop>
-    <source src="pramuditha.mp4" type="video/mp4" />
-    <!-- Add more source tags for other video formats -->
-</video>
+    <script src="buy.js"></script>
+    <video id="bg-video" autoplay muted loop>
+        <source src="World Map Animation.mp4" type="video/mp4" />
+    </video>
+  
+    <style>
+        #bg-video {
+            position: absolute;
+            background-size: cover;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+    </style>
+    <a href="../Indivual/Pramuditha.html">
+        <button id="fixed-btn">Pramuditha</button>
+    </a>
 
-<style>
-    #bg-video {
-        position: absolute;
-        background-size: cover;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1;
-    }
-</style>
-<a href="../Indivual/Pramuditha.html">
-<button id="fixed-btn">Pramuditha</button>
-</a>
+    <a href="../Rateus/rateus.html">
+        <button id="fixed-btn1">Rate Us</button>
+    </a>
 
 </body>
+
 </html>

@@ -1,9 +1,9 @@
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-font-family: "Poppins",
-sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",
+    sans-serif;
 }
 
 .start-screen,
@@ -19,29 +19,38 @@ sans-serif;
 }
 
 button {
-  
+
   border-radius: 50px;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
-#start-button,
 #restart {
-  
-  border-radius: 50px;
+
+  border-radius:30px;
   font-size: 1.3em;
   padding: 0.5em 1.8em;
-  border-radius: 0.2em;
+ 
+}
+
+#start-button{
+  font-size: 1.3em;
+  padding: 0.5em 1.8em;
+  border-radius:30px;
+  position: relative;
+  top: 150px;
+  right: 270px;
+  margin-left: 500px;
 }
 
 #start-button:hover {
-  background-color: #0aed21;
+  background-color: #0ac0ed;
   color: #333;
 }
 
 #restart:hover {
-  background-color: #0aed21;
+  background-color: #0ac0ed;
   color: #333;
 }
 
@@ -50,7 +59,7 @@ button {
 }
 
 #display-container {
-  
+
   border-radius: 50px;
   background-color: #ffffff;
   padding: 3.1em 1.8em;
@@ -196,7 +205,6 @@ body::-webkit-scrollbar {
 }
 
 #fixed-btn {
-  /* display: flex; */
   width: 140px;
   margin: 0.3rem auto 0 auto;
   background-color: rgba(255, 255, 255, 0.3);
@@ -206,29 +214,19 @@ body::-webkit-scrollbar {
   right: -10px;
   border: #ffffff;
   border-radius: 10px;
-  /* background-color: #008cff; */
   color: #fff;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
 }
-
 #fixed-btn:hover {
   background: #0c89cc;
   transform: translateY(3px);
   cursor: pointer;
 }
-.navbar{
-  /* background-color: rgba(74, 74, 74, 0.3); */
-
-  /* background: #242424; */
-}
-
 .logo{
 margin-left: 0px;
-  /* color: #000000; */
-  /* background-color: #000000; */
   border: 0px;
   background-color: rgba(23, 23, 23, 0.3);
   background-image: url(logo.png);
@@ -238,4 +236,23 @@ margin-left: 0px;
   align-content: flex-end;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.start-box {
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 3.1em 5em;
+  width: 80%;
+  max-width: 37.5em;
+  margin-top: 20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 300px;
+  left: 750px;
+  border-radius: 20px;
+}
+.start-box h2 {
+  padding-left: 50px;
+  font-size: 30px;
+  color: #000000;
 }

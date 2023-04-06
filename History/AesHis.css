@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+.about{
+    background: url(aesthatic.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #131212;
+    overflow: hidden;
+    padding: 30px 0;
+}
+.inner-section{
+    width: 55%;
+    float: right;
+    background-color: #93d393;
+    padding: 140px;
+    box-shadow: 13px 12px 8px rgba(0,0,0,0.3);
+}
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.skills button{
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color: #00999c;
+    color: white;
+    cursor: pointer;
+}
+.skills button:hover{
+    transition: 1s;
+    background-color: #ecf5f5;
+    color: #00999c;
+}
+@media screen and (max-width:1200px){
+    .inner-section{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about{
+        padding: 0;
+    }
+    .inner-section{
+        padding: 60px;
+    }
+    .skills button{
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+}
+
+header {
+    position: absolute;
+    top: 0;
+    /* left: 0;
+      right: 10; */
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    font-size: 1.5em;
+  }
+  
+  
+  
+  header .Logo {
+    color: azure;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+  }
+  
+  header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  header ul li {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: aliceblue;
+    border-radius: 20px;
+  }
+  
+  header ul li.active a {
+    background: #2b1055;
+    color: #fff;
+  }
+
+  
+header ul li a:hover,
+header ul li a:hover {
+  background: #fff;
+  color: #2b1055;
+}
+  
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.us{
+  font-size: 35px;
+  position: fixed;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.logo{
+  margin-left: 0px;
+    border: 0px;
+    background-color: rgba(23, 23, 23, 0.3);
+    background-image: url(logo.png);
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    align-content: flex-end;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  #fixed-btn {
+    width: 140px;
+    margin: 0.3rem auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 12px 20px;
+    position: fixed;
+    top: 150px;
+    right: -10px; 
+    border: #ffffff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #fixed-btn:hover {
+    background: #0c59cc;
+    transform: translateY(3px);
+    cursor: pointer;
+  }

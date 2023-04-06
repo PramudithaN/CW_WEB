@@ -5,151 +5,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- custom css file link  -->
     <link rel="stylesheet" href="pay.css">
 
 </head>
 
-<header class="navbar">
-    <header class="navbar">
-        <a href="../MainPage/Home.html"> 
-          <button class="logo"></button>
-        </a>
-    <ul>
-      <li><a href="../MainPage/Home.html">Home</a></li>
-      <li><a href="../BuyProducts/Buy.html">Shop</a></li>
-      <li class="active"><a href="../Payment/pay.html">Payment</a></li>
-    </ul>
 
+<header class="navbar">
+    <a href="../MainPage/Home.html">
+        <button class="logo"></button>
+    </a>
+    <ul>
+        <li><a href="../MainPage/Home.html">Home</a></li>
+        <li><a href="../BuyProducts/Buy.html">Shop</a></li>
+        <li class="active"><a href="../Payment/pay.html">Payment</a></li>
+    </ul>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
-      $(document).on("click", "ul li", function () {
-        $(this).addClass("active").siblings().removeClass();
-      });
+        $(document).on("click", "ul li", function () {
+            $(this).addClass("active").siblings().removeClass();
+        });
     </script>
-  </header>
+</header>
 
-<body>
+    <body>
 
-    <div class="container">
+        <div class="container">
 
-        <form id="checkout-form" action="">
+            <form id="checkout-form" action="">
 
-            <div class="row">
+                <div class="row">
 
-                <div class="col">
+                    <div class="col">
 
-                    <h3 class="title">billing address</h3>
+                        <h3 class="title">billing address</h3>
 
-                    <div class="inputBox">
-                        <span>full name :</span>
-                        <input type="text" placeholder="full name" id="full-name">
-                    </div>
-                    <div class="inputBox">
-                        <span>email :</span>
-                        <input type="email" placeholder="example@example.com" id="email">
-                    </div>
-                    <div class="inputBox">
-                        <span>address :</span>
-                        <input type="text" placeholder="room - street - locality" id="address">
-                    </div>
-                    <div class="inputBox">
-                        <span>city :</span>
-                        <input type="text" placeholder="city" id="city">
-                    </div>
-
-                    <div class="flex">
                         <div class="inputBox">
-                            <span>state :</span>
-                            <input type="text" placeholder="Country" id="state">
+                            <span>full name :</span>
+                            <input type="text" placeholder="full name" id="full-name">
                         </div>
                         <div class="inputBox">
-                            <span>zip code :</span>
-                            <input type="text" placeholder="123 456" id="zip-code">
+                            <span>email :</span>
+                            <input type="email" placeholder="example@example.com" id="email">
                         </div>
+                        <div class="inputBox">
+                            <span>address :</span>
+                            <input type="text" placeholder="room - street - locality" id="address">
+                        </div>
+                        <div class="inputBox">
+                            <span>city :</span>
+                            <input type="text" placeholder="city" id="city">
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>state :</span>
+                                <input type="text" placeholder="Country" id="state">
+                            </div>
+                            <div class="inputBox">
+                                <span>zip code :</span>
+                                <input type="text" placeholder="123 456" id="zip-code">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+
+                        <h3 class="title">payment</h3>
+
+                        <div class="inputBox">
+                            <span>cards accepted :</span>
+                            <img src="card_img.png" alt="">
+                        </div>
+                        <div class="inputBox">
+                            <span>name on card :</span>
+                            <input type="text" placeholder="name on card" id="card-name">
+                        </div>
+                        <div class="inputBox">
+                            <span>credit card number :</span>
+                            <input type="text" placeholder="1111-2222-3333-4444" id="card-number">
+                        </div>
+                        <div class="inputBox">
+                            <span>exp month :</span>
+                            <input type="text" placeholder="month" id="exp-month">
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>exp year :</span>
+                                <input type="number" placeholder="2022" id="exp-year">
+                            </div>
+                            <div class="inputBox">
+                                <span>CVV :</span>
+                                <input type="text" placeholder="1234" id="cvv">
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
-
-                <div class="col">
-
-                    <h3 class="title">payment</h3>
-
-                    <div class="inputBox">
-                        <span>cards accepted :</span>
-                        <img src="card_img.png" alt="">
-                    </div>
-                    <div class="inputBox">
-                        <span>name on card :</span>
-                        <input type="text" placeholder="ms. Sewmie Dissanayake" id="card-name">
-                    </div>
-                    <div class="inputBox">
-                        <span>credit card number :</span>
-                        <input type="text" placeholder="1111-2222-3333-4444" id="card-number">
-                    </div>
-                    <div class="inputBox">
-                        <span>exp month :</span>
-                        <input type="text" placeholder="january" id="exp-month">
-                    </div>
-
-                    <div class="flex">
-                        <div class="inputBox">
-                            <span>exp year :</span>
-                            <input type="number" placeholder="2022" id="exp-year">
-                        </div>
-                        <div class="inputBox">
-                            <span>CVV :</span>
-                            <input type="text" placeholder="1234" id="cvv">
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <input type="submit" value="proceed to checkout" class="submit-btn">
+                <input type="submit" value="proceed to checkout" class="submit-btn">
 
 
 
-        </form>
-<div id="bill">Billing Info</div>
-        <div id="display-data"></div>
-    </div>
+            </form>
+            <div id="bill">Billing Info</div>
+            <div id="display-data"></div>
+        </div>
 
 
 
-    <script src="pay.js"></script>
-    <a href="../Indivual/Sewmie.html"> 
-        <button id="fixed-btn">Sewmini</button> 
-      </a>
+        <script src="pay.js"></script>
+        <a href="../Indivual/Sewmie.html">
+            <button id="fixed-btn">Sewmini</button>
+        </a>
 
 
-      <button id="open-dialog-button">Open Dialog Box</button>
-<div id="dialog-box">
-  <p>This is a dialog box.</p>
-  <button id="close-dialog-button">Close</button>
-</div>
+        <div id="dialog-box">
+            <p>Thank you for your purchase!</p>
+            <button id="close-dialog-button">Okay</button>
+        </div>
+        <script>
+            $(document).ready(function() {
+              $("#close-dialog-button").click(function() {
+                $("#dialog-box").hide();
+              });
+            });
+            </script>
+        
 
 
 
-<script src="buy.js"></script>
-<video id="bg-video" autoplay muted loop>
-    <source src="sewmiebi.mp4" type="video/mp4" />
-    <!-- Add more source tags for other video formats -->
-</video>
+        <script src="buy.js"></script>
+        <video id="bg-video" autoplay muted loop>
+            <source src="sewmiebi.mp4" type="video/mp4" />
+        </video>
 
-<style>
-    #bg-video {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1;
-    }
-</style>
+        <style>
+            #bg-video {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+                z-index: -1;
+            }
+        </style>
 
 
-</body>
+    </body>
 
 </html>

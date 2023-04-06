@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="His.css">
+</head>
+
+<body>
+  <div class="banner"></div>
+
+  <header class="navbar">
+    <a href="../MainPage/Home.html"> 
+      <button class="logo"></button>
+    </a>
+    <ul>
+      <li><a href="../MainPage/Home.html">Home</a></li>
+      <li><a href="../Gallery/Gallery.html">Gallery</a></li>
+      <li><a href="../BuyProducts/Buy.html">Shop</a></li>
+      <li><a href="../Quiz/quiz.html">Quiz</a></li>
+      <li><a href="../Sitemap/sitemap1.html">Sitemap</a></li>
+      <li><a href="../Comments/Comment.html">Comments</a></li>
+      <li><a href="../AboutUs/AboutUs.html">About Us</a></li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).on("click", "ul li", function () {
+        $(this).addClass("active").siblings().removeClass();
+      });
+    </script>
+  </header>
+
+  <section class="hero-section">
+    <div class="us">
+      <h2>History</h2>
+    </div>
+    
+    <div class="card-grid">
+      <a class="card" href="../History/DigiHIs.html">
+        <div class="card__background" style="background-image: url(digitalart.jpg)"></div>
+        <div class="card__content">
+          <h3 class="card__heading">Digital Art</h3>
+          <button type="button" class="btn-his">Read More</button>
+        </div>
+      </a>
+
+      <a class="card" href="../History/HandHis.html">
+        <div class="card__background" style="background-image: url(handdrawn.jpg)"></div>
+        <div class="card__content">
+          <h3 class="card__heading">Hand Drawn Art</h3>
+          <button type="button" class="btn-his1">Read More</button>
+        </div>
+      </a>
+
+      <a class="card" href="../History/AiHis.html">
+        <div class="card__background" style="background-image: url(ai\ art.jpg)"></div>
+        <div class="card__content">
+          <h3 class="card__heading">Ai Art</h3>
+          <button type="button" class="btn-his2">Read More</button>
+        </div>
+      </a>
+
+        <a class="card" href="../History/AesHis.html">
+          <div class="card__background" style="background-image: url(aesthatic.jpg)"></div>
+          <div class="card__content">
+            <h3 class="card__heading">Aesthetic Art</h3>
+          <button type="button" class="btn-his3">Read More</button>
+          </div>
+        </a>
+        <a href="../Indivual/kavindu.html">
+          <button id="fixed-btn1">kavindu</button>
+        </a>
+</body>
+
+</html>
